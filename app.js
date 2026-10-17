@@ -1,8 +1,8 @@
 
 'use strict';
 
-// Saturday Edge — Phase 2.3
-// Live scores, quarter, game clock, predictions and private ledger.
+// Saturday Edge — Phase 2.5
+// Live scores, AP rankings, records, predictions and private ledger.
 
 const $ = id => document.getElementById(id);
 
@@ -24,7 +24,6 @@ const esc = value => String(value ?? '').replace(
 
 function dateFmt(value) {
   if (!value) return 'Unknown';
-
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return 'Unknown';
 
@@ -40,7 +39,6 @@ function dateFmt(value) {
 
 function timeFmt(value) {
   if (!value) return 'Unknown';
-
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return 'Unknown';
 
@@ -59,10 +57,7 @@ for (const button of document.querySelectorAll('nav button')) {
     });
 
     document.querySelectorAll('.tab').forEach(tab => {
-      tab.classList.toggle(
-        'active',
-        tab.id === button.dataset.tab
-      );
+      tab.classList.toggle('active', tab.id === button.dataset.tab);
     });
   });
 }
@@ -96,11 +91,66 @@ function teamBadge(team) {
     </span>`;
 }
 
+function verifiedAPRank(team) {
+  // Only use apRank populated from an explicitly AP-labeled source.
+  const rank = Number(team.apRank);
+
+  return Number.isInteger(rank) &&
+    rank >= 1 &&
+    rank <= 25
+      ? rank
+      : null;
+}
+
 function teamRow(team) {
+  const rank = verifiedAPRank(team);
+
+  const record = typeof team.record === 'string' &&
+    /^\d+\s*-\s*\d+(?:\s*-\s*\d+)?$/.test(team.record.trim())
+      ? team.record.trim()
+      : '';
+
+  const rankHTML = rank === null ? '' : `
+    <span
+      aria-label="AP rank ${rank}"
+      title="AP Top 25"
+      style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        flex-shrink:0;
+        min-width:27px;
+        padding:2px 5px;
+        border-radius:5px;
+        background:#3a2026;
+        color:#ff6976;
+        font-size:12px;
+        font-weight:800;
+      "
+    >${rank}</span>`;
+
+  const recordHTML = record ? `
+    <span style="
+      font-size:11px;
+      color:#a9a9b1;
+      font-weight:400;
+      white-space:nowrap;
+    ">(${esc(record)})</span>` : '';
+
   return `
     <div class="teamrow">
       ${teamBadge(team)}
-      <strong>${esc(team.name)}</strong>
+      <span style="
+        display:flex;
+        align-items:center;
+        gap:6px;
+        flex-wrap:wrap;
+        min-width:0;
+      ">
+        ${rankHTML}
+        <strong>${esc(team.name)}</strong>
+        ${recordHTML}
+      </span>
     </div>`;
 }
 
@@ -110,7 +160,9 @@ function normalizeTeam(team, fallbackScore) {
       name: team,
       abbreviation: team.slice(0, 2),
       logo: null,
-      score: fallbackScore ?? null
+      score: fallbackScore ?? null,
+      apRank: null,
+      record: ''
     };
   }
 
@@ -118,7 +170,9 @@ function normalizeTeam(team, fallbackScore) {
     name: 'Unknown',
     abbreviation: '?',
     logo: null,
-    score: null
+    score: null,
+    apRank: null,
+    record: ''
   };
 }
 
@@ -149,7 +203,6 @@ function projectionLabel(game, home, away) {
     </div>`;
 }
 
-// Convert ESPN periods to football quarter labels.
 function quarterLabel(period) {
   const number = Number(period);
 
@@ -157,9 +210,7 @@ function quarterLabel(period) {
     return '';
   }
 
-  if (number <= 4) {
-    return 'Q' + number;
-  }
+  if (number <= 4) return 'Q' + number;
 
   return number === 5
     ? 'OT'
@@ -171,15 +222,9 @@ function gamePhase(game) {
     return 'final';
   }
 
-  if (game.gamePhase === 'live') {
-    return 'live';
-  }
+  if (game.gamePhase === 'live') return 'live';
+  if (game.gamePhase === 'pregame') return 'pregame';
 
-  if (game.gamePhase === 'pregame') {
-    return 'pregame';
-  }
-
-  // Fallback for saved GitHub data.
   const status = String(game.status || '').toLowerCase();
 
   if (
@@ -205,13 +250,8 @@ function gamePhase(game) {
 function liveStatus(game) {
   const phase = gamePhase(game);
 
-  if (phase === 'final') {
-    return 'FINAL';
-  }
-
-  if (phase === 'pregame') {
-    return 'PREGAME';
-  }
+  if (phase === 'final') return 'FINAL';
+  if (phase === 'pregame') return 'PREGAME';
 
   const statusName = String(
     game.statusName || ''
@@ -235,9 +275,7 @@ function liveStatus(game) {
     return quarter + ' · ' + clock;
   }
 
-  if (quarter) {
-    return quarter;
-  }
+  if (quarter) return quarter;
 
   return detail || 'LIVE';
 }
@@ -273,7 +311,6 @@ function mergeGames() {
       completed: update.completed,
       kickoff: update.kickoff || game.kickoff,
 
-      // Phase 2.3 live metadata
       gamePhase: update.gamePhase,
       period: update.period,
       clock: update.clock,
@@ -283,21 +320,24 @@ function mergeGames() {
       home: {
         ...home,
         score: update.home?.score ?? home.score,
-        logo: home.logo || update.home?.logo
+        logo: home.logo || update.home?.logo,
+        apRank: update.home?.apRank ?? home.apRank ?? null,
+        record: update.home?.record || home.record || ''
       },
 
       away: {
         ...away,
         score: update.away?.score ?? away.score,
-        logo: away.logo || update.away?.logo
+        logo: away.logo || update.away?.logo,
+        apRank: update.away?.apRank ?? away.apRank ?? null,
+        record: update.away?.record || away.record || ''
       },
 
-      // Preserve the original model prediction.
+      // Preserve the existing experimental prediction.
       prediction: game.prediction
     };
   });
 
-  // Show games from ESPN that aren't in the saved feed.
   for (const game of byId.values()) {
     merged.push(game);
   }
@@ -361,7 +401,9 @@ function renderGames() {
 
         const updateNote =
           phase === 'live' && lastLiveSuccess
-            ? `<div class="fine">Score checked ${esc(timeFmt(lastLiveSuccess))}</div>`
+            ? `<div class="fine">
+                Score checked ${esc(timeFmt(lastLiveSuccess))}
+              </div>`
             : '';
 
         return `
@@ -398,6 +440,7 @@ async function loadSavedGames() {
     renderGames();
 
     return true;
+
   } catch (error) {
     console.warn('Saved game feed unavailable:', error);
     return false;
@@ -480,8 +523,8 @@ loadSavedGames().then(() => {
   }
 });
 
-// The live-scores.js file handles automatic polling.
-// Do not create a second timer here.
+// live-scores.js handles automatic polling.
+// Do not create another timer here.
 
 // Five-model research calculator
 function normalCDF(x) {
@@ -538,11 +581,13 @@ $('calculate').addEventListener('click', () => {
   }
 
   const total = inputs.reduce(
-    (sum, item) => sum + item.weight, 0
+    (sum, item) => sum + item.weight,
+    0
   );
 
   const margin = inputs.reduce(
-    (sum, item) => sum + item.value * item.weight, 0
+    (sum, item) => sum + item.value * item.weight,
+    0
   ) / total;
 
   const range =
