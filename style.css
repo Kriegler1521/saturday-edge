@@ -1,5 +1,448 @@
 
-:root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#ecf5ff;background:#08111e}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 10% 0,#163049,#08111e 48%);min-height:100vh}.shell{max-width:980px;margin:auto;padding:calc(22px + env(safe-area-inset-top)) 16px calc(35px + env(safe-area-inset-bottom))}header{display:flex;justify-content:space-between;align-items:center;gap:12px}header small,.hero small{color:#8fa9bf;font-size:10px;letter-spacing:2px;font-weight:800}h1{font-size:31px;letter-spacing:-1.5px;margin:3px 0 20px}h1 span{color:#3fd2b7}.chip{font-size:11px;background:#1b3448;padding:9px;border-radius:20px;color:#a8d9d1;max-width:140px;text-align:center}nav{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;background:#101e2f;border-radius:14px;padding:5px;margin-bottom:22px}button,.filebtn{cursor:pointer;border:1px solid #335067;background:#1a3045;color:#ecf5ff;border-radius:11px;padding:11px 12px;font-size:14px;font-weight:650}nav button{border:0;background:transparent;color:#9aadc1;padding:12px 3px;font-size:13px}nav button.active{background:#28556a;color:white}.tab{display:none}.tab.active{display:block}.hero{display:flex;align-items:center;justify-content:space-between;gap:12px;background:linear-gradient(115deg,#17344b,#102a3a);border:1px solid #28506b;border-radius:18px;padding:20px}.hero h2{margin:4px 0 6px;font-size:25px}.hero p{margin:0;color:#abc0d0;font-size:12px}.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:13px 0 18px}.stats>div,.panel,.game,.bet{border:1px solid #274159;border-radius:15px;background:#102235;padding:16px}.stats small{display:block;color:#a2b5c7;font-size:12px}.stats strong{display:block;font-size:25px;margin-top:5px}.cards{display:grid;gap:10px}.game{display:flex;align-items:center;justify-content:space-between;gap:12px}.game strong{font-size:15px}.game p,.game small{color:#a7b9c8;font-size:12px;margin:5px 0}.game .score{font-weight:750;font-size:17px;text-align:right;white-space:nowrap}.muted{color:#a9bbcd;font-size:14px;line-height:1.5}.fine{color:#8ca5b9;font-size:12px;line-height:1.5}.panel{display:grid;gap:14px}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}label{font-size:12px;color:#abc0d0;display:grid;gap:6px}input,select{width:100%;background:#091929;border:1px solid #38576d;color:white;border-radius:10px;padding:12px 10px;font-size:16px;min-width:0}input::placeholder{color:#6e879d}.primary{background:#1eab9b;color:#071b23;border:0;font-weight:800}.result{background:#091929;border-radius:12px;padding:16px;line-height:1.7;font-size:14px;white-space:pre-line}.actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.bet{display:flex;justify-content:space-between;gap:12px}.bet button{padding:5px 9px;font-size:11px}.bet p{margin:5px 0;color:#a6bccd;font-size:12px}footer{text-align:center;color:#718ba0;margin-top:35px;font-size:11px}h2{font-size:23px}h3{margin:12px 0 2px;font-size:15px}.panel p{font-size:13px;color:#a9c0d0;line-height:1.6}@media(max-width:380px){.two{grid-template-columns:1fr}.chip{font-size:10px}h1{font-size:27px}}
+/* Saturday Edge — Black & Red Sports Dashboard */
 
-/* Phase 2: school branding and experimental predictions */
-.teamrow{display:flex;align-items:center;gap:10px;margin:5px 0;min-width:0}.teamrow strong{font-size:.94rem}.teamlogo{width:35px;height:35px;flex:0 0 35px;display:inline-flex;align-items:center;justify-content:center}.teamlogo img{max-width:35px;max-height:35px;object-fit:contain}.logofallback{border-radius:50%;background:#23334b;color:#d9e6f2;width:35px;height:35px;align-items:center;justify-content:center;font-weight:700;font-size:.65rem}.matchup{min-width:0;flex:1}.projection{font-size:.78rem;margin-top:8px;color:#75e1d3;font-weight:700}.game{align-items:center}.score{min-width:66px;text-align:right}
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #f5f5f7;
+  background: #08080a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #08080a;
+  color: #f5f5f7;
+}
+
+.shell {
+  max-width: 980px;
+  margin: auto;
+  padding:
+    calc(22px + env(safe-area-inset-top))
+    16px
+    calc(35px + env(safe-area-inset-bottom));
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+header small,
+.hero small {
+  color: #a6a6ac;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 31px;
+  letter-spacing: -1.5px;
+  margin: 3px 0 20px;
+}
+
+h1 span {
+  color: #ed2536;
+}
+
+.chip {
+  font-size: 11px;
+  background: #252529;
+  border: 1px solid #38383d;
+  padding: 9px;
+  border-radius: 20px;
+  color: #eeeeee;
+  max-width: 140px;
+  text-align: center;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  background: #19191d;
+  border: 1px solid #29292d;
+  border-radius: 14px;
+  padding: 5px;
+  margin-bottom: 22px;
+}
+
+button,
+.filebtn {
+  cursor: pointer;
+  border: 1px solid #45454b;
+  background: #29292f;
+  color: #f5f5f7;
+  border-radius: 10px;
+  padding: 11px 12px;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+nav button {
+  border: 0;
+  background: transparent;
+  color: #b3b3bb;
+  padding: 12px 3px;
+  font-size: 13px;
+}
+
+nav button.active {
+  background: #c81f30;
+  color: #ffffff;
+}
+
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: linear-gradient(115deg, #242428, #161619);
+  border: 1px solid #3a3a40;
+  border-left: 4px solid #e32636;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.hero h2 {
+  margin: 4px 0 6px;
+  font-size: 25px;
+}
+
+.hero p {
+  margin: 0;
+  color: #b6b6bd;
+  font-size: 12px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 13px 0 18px;
+}
+
+.stats > div,
+.panel,
+.game,
+.bet {
+  border: 1px solid #38383e;
+  border-radius: 14px;
+  background: #19191d;
+  padding: 16px;
+}
+
+.stats small {
+  display: block;
+  color: #b0b0b8;
+  font-size: 12px;
+}
+
+.stats strong {
+  display: block;
+  font-size: 25px;
+  margin-top: 5px;
+  color: #ffffff;
+}
+
+.cards {
+  display: grid;
+  gap: 10px;
+}
+
+/* Game card layout */
+
+.game {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 12px;
+  min-width: 0;
+}
+
+.matchup {
+  min-width: 0;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.game .score {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 60px;
+  font-weight: 800;
+  font-size: 17px;
+  text-align: right;
+  white-space: nowrap;
+  padding-top: 7px;
+  color: #ffffff;
+}
+
+.game .score small {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #e32636;
+  margin-top: 5px;
+}
+
+.game strong {
+  font-size: 15px;
+}
+
+.game p,
+.game small {
+  color: #b5b5bd;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+/* Team logos and names */
+
+.teamrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+  min-width: 0;
+}
+
+.teamrow strong {
+  font-size: .94rem;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+  color: #ffffff;
+}
+
+.teamlogo {
+  width: 35px;
+  height: 35px;
+  flex: 0 0 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teamlogo img {
+  max-width: 35px;
+  max-height: 35px;
+  object-fit: contain;
+}
+
+.logofallback {
+  border-radius: 50%;
+  background: #33333a;
+  color: #ffffff;
+  width: 35px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: .65rem;
+}
+
+.projection {
+  font-size: .78rem;
+  margin-top: 8px;
+  color: #ff6976;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+/* Sportsbook odds underneath matchup */
+
+.game > .sportsbook-odds {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  width: 100%;
+  min-width: 0;
+  margin-top: 4px !important;
+  overflow-wrap: anywhere;
+  background: #232328;
+  border-color: #44444a !important;
+}
+
+.sportsbook-odds > strong {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.sportsbook-odds div {
+  overflow-wrap: anywhere;
+}
+
+#odds-status {
+  background: #19191d;
+  border-color: #44444a !important;
+  border-left: 3px solid #e32636 !important;
+  color: #ededf0;
+  line-height: 1.6;
+}
+
+#odds-status strong {
+  color: #ff6976;
+}
+
+/* Model and ledger */
+
+.muted {
+  color: #b3b3bd;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.fine {
+  color: #a5a5af;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.panel {
+  display: grid;
+  gap: 14px;
+}
+
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+label {
+  font-size: 12px;
+  color: #bcbcc4;
+  display: grid;
+  gap: 6px;
+}
+
+input,
+select {
+  width: 100%;
+  background: #101014;
+  border: 1px solid #505057;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 12px 10px;
+  font-size: 16px;
+  min-width: 0;
+}
+
+input::placeholder {
+  color: #898992;
+}
+
+.primary {
+  background: #d92335;
+  color: #ffffff;
+  border: 0;
+  font-weight: 800;
+}
+
+.result {
+  background: #101014;
+  border-radius: 12px;
+  padding: 16px;
+  line-height: 1.7;
+  font-size: 14px;
+  white-space: pre-line;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.bet {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.bet button {
+  padding: 5px 9px;
+  font-size: 11px;
+}
+
+.bet p {
+  margin: 5px 0;
+  color: #b3b3bd;
+  font-size: 12px;
+}
+
+footer {
+  text-align: center;
+  color: #8d8d96;
+  margin-top: 35px;
+  font-size: 11px;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+h3 {
+  margin: 12px 0 2px;
+  font-size: 15px;
+}
+
+.panel p {
+  font-size: 13px;
+  color: #bdbdc6;
+  line-height: 1.6;
+}
+
+/* Smaller iPhones */
+
+@media (max-width: 380px) {
+  .two {
+    grid-template-columns: 1fr;
+  }
+
+  .chip {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  .game {
+    gap: 9px;
+    padding: 13px;
+  }
+
+  .game .score {
+    font-size: 15px;
+    min-width: 52px;
+  }
+
+  .teamlogo,
+  .teamlogo img,
+  .logofallback {
+    width: 30px;
+    height: 30px;
+  }
+
+  .teamlogo {
+    flex-basis: 30px;
+  }
+}
