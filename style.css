@@ -1,20 +1,13 @@
 
 /*
-  Saturday Edge — Compact Scoreboard Design
-  Black / Red Edition
-  Phase 3.0
-
-  ESPN-inspired readability with original styling.
-  Preserves sportsbook odds, model and ledger.
+  Saturday Edge — Phase 3.1
+  Compact College Football Scoreboard
+  Black & Red Edition
 */
 
 :root {
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
-
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
   color: #f5f5f7;
   background: #08080a;
 }
@@ -38,6 +31,8 @@ body {
     14px
     calc(35px + env(safe-area-inset-bottom));
 }
+
+/* Header */
 
 header {
   display: flex;
@@ -74,6 +69,8 @@ h1 span {
   max-width: 140px;
   text-align: center;
 }
+
+/* Navigation */
 
 nav {
   display: grid;
@@ -118,6 +115,8 @@ nav button.active {
 .tab.active {
   display: block;
 }
+
+/* Game board heading */
 
 .hero {
   display: flex;
@@ -173,182 +172,214 @@ nav button.active {
 
 .cards {
   display: grid;
-  gap: 9px;
+  gap: 10px;
 }
 
-/* -----------------------------------
-   Compact Game Cards
------------------------------------ */
+/* ==================================
+   NEW SCOREBOARD CARD
+================================== */
 
 .game {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: start;
-  column-gap: 10px;
-  row-gap: 9px;
-
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
   min-width: 0;
-  padding: 13px 12px;
 
-  border: 1px solid #333338;
-  border-radius: 12px;
-  background: #17171b;
+  padding: 13px 13px 11px;
+  border: 1px solid #34343b;
+  border-radius: 13px;
+  background: #19191d;
+
+  overflow: hidden;
 }
 
-.matchup {
+/* Game date and live status */
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  padding-bottom: 9px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #34343a;
+
+  color: #a8a8b2;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .15px;
+}
+
+.game-header > span:first-child {
   min-width: 0;
-  grid-column: 1;
-  grid-row: 1;
+}
+
+.game-status {
+  flex: 0 0 auto;
+  font-size: 11px;
+  font-weight: 800;
+  color: #aeb0b8;
+  white-space: nowrap;
+}
+
+.game-status.live {
+  color: #ff475b;
+}
+
+.game-status.final {
+  color: #d6d6dd;
+}
+
+.game-status.pregame {
+  color: #aeb0b8;
+}
+
+/* Team rows */
+
+.matchup {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
 }
 
 .teamrow {
   display: flex;
   align-items: center;
   gap: 8px;
-
-  min-height: 35px;
-  margin: 2px 0;
-
+  min-height: 39px;
   min-width: 0;
 }
 
-/* Team name wrapper from app.js */
-
-.teamrow > span:last-child {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 4px !important;
-  min-width: 0;
-}
-
-/* Logos */
+/* Team logo */
 
 .teamlogo {
-  width: 29px;
-  height: 29px;
-  flex: 0 0 29px;
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
+  width: 33px;
+  height: 33px;
+  flex: 0 0 33px;
 }
 
 .teamlogo img {
-  max-width: 29px;
-  max-height: 29px;
+  display: block;
+  max-width: 33px;
+  max-height: 33px;
   object-fit: contain;
 }
 
 .logofallback {
+  width: 33px;
+  height: 33px;
   border-radius: 50%;
-  background: #33333a;
-  color: #ffffff;
-
-  width: 29px;
-  height: 29px;
 
   align-items: center;
   justify-content: center;
 
-  font-weight: 700;
+  background: #33333a;
+  color: #ffffff;
   font-size: 10px;
+  font-weight: 800;
 }
 
-.teamrow strong {
-  font-size: 13px;
-  font-weight: 750;
-  line-height: 1.25;
+/* AP rankings */
+
+.ap-rank {
+  flex: 0 0 18px;
+  min-width: 18px;
+
+  color: #b6b6c0;
+  font-size: 12px;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* Team name and season record */
+
+.team-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 2px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.team-details strong {
   color: #ffffff;
+  font-size: 14px;
+  font-weight: 750;
+  line-height: 1.2;
   overflow-wrap: break-word;
 }
 
-/* AP rankings — compact like a scoreboard */
-
-.teamrow [aria-label^="AP rank"] {
-  background: transparent !important;
-  color: #b8b8c0 !important;
-
-  min-width: auto !important;
-  padding: 0 !important;
-
-  border-radius: 0 !important;
-  font-size: 12px !important;
-  font-weight: 750 !important;
-}
-
-/* Team records */
-
-.teamrow span[style*="white-space:nowrap"] {
-  font-size: 11px !important;
-  color: #92929d !important;
-}
-
-/* Score display — temporary until app.js update */
-
-.game .score {
-  grid-column: 2;
-  grid-row: 1;
-
-  min-width: 56px;
-  text-align: right;
-  white-space: nowrap;
-
-  font-size: 18px;
-  font-weight: 800;
-  color: #ffffff;
-
-  padding-top: 5px;
-}
-
-.game .score small {
-  display: block;
-  margin-top: 5px;
-
-  color: #ff5263;
-  font-size: 11px;
-  font-weight: 750;
-}
-
-/* Matchup details */
-
-.game .matchup p {
-  margin: 8px 0 3px;
+.team-record {
   color: #92929d;
   font-size: 11px;
-  line-height: 1.4;
+  line-height: 1.2;
+}
+
+/* Individual team scores */
+
+.team-score {
+  flex: 0 0 auto;
+  min-width: 36px;
+  margin-left: auto;
+
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 850;
+  line-height: 1;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Prediction and score update */
+
+.game-details {
+  border-top: 1px solid #34343a;
+  margin-top: 10px;
+  padding-top: 9px;
+  min-width: 0;
 }
 
 .projection {
-  margin-top: 5px;
   color: #ff6976;
   font-size: 11px;
-  font-weight: 650;
-  line-height: 1.4;
+  font-weight: 700;
+  line-height: 1.5;
 }
 
-.game .fine {
-  margin-top: 4px;
+.game-details .fine {
+  color: #9999a4;
   font-size: 10px;
-  color: #92929d;
+  margin-top: 3px;
 }
 
-/* -----------------------------------
-   Sportsbook Odds
------------------------------------ */
+/* ==================================
+   SPORTSBOOK ODDS
+================================== */
+
+/*
+  The odds script appends its panel
+  directly inside each .game.
+
+  Keep it full width below the teams.
+*/
 
 .game > .sportsbook-odds {
   grid-column: 1 / -1;
-  grid-row: 2;
-
   width: 100%;
   min-width: 0;
-  margin-top: 4px !important;
 
-  overflow-wrap: anywhere;
+  margin-top: 11px !important;
 
   background: #232328;
   border-color: #44444a !important;
+  overflow-wrap: anywhere;
 }
 
 .sportsbook-odds > strong {
@@ -374,9 +405,9 @@ nav button.active {
   color: #ff6976;
 }
 
-/* -----------------------------------
-   Model and Ledger
------------------------------------ */
+/* ==================================
+   MODEL AND LEDGER
+================================== */
 
 .muted {
   color: #b3b3bd;
@@ -486,9 +517,9 @@ h3 {
   line-height: 1.6;
 }
 
-/* -----------------------------------
-   Small iPhone Screens
------------------------------------ */
+/* ==================================
+   SMALL IPHONES
+================================== */
 
 @media (max-width: 380px) {
   .two {
@@ -505,7 +536,6 @@ h3 {
 
   .game {
     padding: 11px 10px;
-    column-gap: 7px;
   }
 
   .teamrow {
@@ -513,23 +543,25 @@ h3 {
   }
 
   .teamlogo {
-    width: 25px;
-    height: 25px;
-    flex-basis: 25px;
+    width: 28px;
+    height: 28px;
+    flex-basis: 28px;
   }
 
   .teamlogo img,
   .logofallback {
-    width: 25px;
-    height: 25px;
+    max-width: 28px;
+    max-height: 28px;
+    width: 28px;
+    height: 28px;
   }
 
-  .teamrow strong {
+  .team-details strong {
     font-size: 12px;
   }
 
-  .game .score {
-    font-size: 16px;
-    min-width: 48px;
+  .team-score {
+    font-size: 20px;
+    min-width: 30px;
   }
 }
