@@ -1,13 +1,14 @@
 
 'use strict';
 
-// Saturday Edge — Sportsbook odds display.
-// Reads public data/odds.json, never the private API key.
-// Designed to work alongside the existing app.js.
+// Saturday Edge — Sportsbook Comparison v2
+// Uses saved odds snapshots, never a browser-side API key.
+// Does not alter scores, predictions, or the private ledger.
 
 (() => {
   const ODDS_URL = './data/odds.json';
-  const STALE_AFTER_MINUTES = 15;
+  const DEFAULT_STALE_MINUTES = 15;
+  const DISPLAY_REFRESH_MS = 60000;
 
   let oddsFeed = null;
 
@@ -25,30 +26,30 @@
     .replace(/&/g, 'and')
     .replace(/[^a-z0-9]/g, '');
 
+  const validNumber = value =>
+    value !== null &&
+    value !== undefined &&
+    value !== '' &&
+    Number.isFinite(Number(value));
+
   const money = value => {
+    if (!validNumber(value)) return 'N/A';
     const number = Number(value);
-
-    if (!Number.isFinite(number)) return 'N/A';
-
     return number > 0 ? '+' + number : String(number);
   };
 
   const points = value => {
+    if (!validNumber(value)) return 'N/A';
     const number = Number(value);
-
-    if (!Number.isFinite(number)) return 'N/A';
-
-    return number > 0
-      ? '+' + number
-      : String(number);
+    return number > 0 ? '+' + number : String(number);
   };
 
   const ageMinutes = value => {
-    const date = new Date(value);
+    const timestamp = new Date(value).getTime();
 
-    if (!Number.isFinite(date.getTime())) return Infinity;
-
-    return Math.max(0, (Date.now() - date.getTime()) / 60000);
+    return Number.isFinite(timestamp)
+      ? Math.max(0, (Date.now() - timestamp) / 60000)
+      : Infinity;
   };
 
   const dateLabel = value => {
@@ -66,210 +67,331 @@
     });
   };
 
-  function isStale() {
+  function stale() {
+    const configured = Number(oddsFeed?.stale_after_minutes);
+
+    const threshold = Number.isFinite(configured) && configured > 0
+      ? configured
+      : DEFAULT_STALE_MINUTES;
+
     return !oddsFeed ||
       oddsFeed.status === 'stale' ||
-      ageMinutes(oddsFeed.updated_at) >
-        (Number(oddsFeed.stale_after_minutes) ||
-         STALE_AFTER_MINUTES);
+      ageMinutes(oddsFeed.updated_at) > threshold;
   }
 
-  function outcome(book, marketKey, teamName) {
-    const outcomes =
-      book.markets?.[marketKey]?.outcomes || [];
-
-    return outcomes.find(item =>
-      normalize(item.name) === normalize(teamName)
-    );
+  function bookmakerName(book) {
+    return book.title || book.key || 'Sportsbook';
   }
 
-  function bestSpread(game, teamName) {
-    const candidates = [];
+  function findBook(game, key) {
+    return (game.bookmakers || []).find(book =>
+      String(book.key || '').toLowerCase() === key
+    ) || null;
+  }
+
+  function marketOutcome(book, market, name) {
+    return (book?.markets?.[market]?.outcomes || [])
+      .find(item => normalize(item.name) === normalize(name)) || null;
+  }
+
+  function availablePrices(game, market, name) {
+    const prices = [];
 
     for (const book of game.bookmakers || []) {
-      const item = outcome(book, 'spreads', teamName);
+      const item = marketOutcome(book, market, name);
+
+      if (!item || !validNumber(item.price)) continue;
 
       if (
-        item &&
-        Number.isFinite(Number(item.point)) &&
-        Number.isFinite(Number(item.price))
+        (market === 'spreads' || market === 'totals') &&
+        !validNumber(item.point)
       ) {
-        candidates.push({
-          point: Number(item.point),
-          price: Number(item.price),
-          book: book.title || book.key || 'Sportsbook'
-        });
+        continue;
       }
+
+      prices.push({
+        book: bookmakerName(book),
+        key: book.key,
+        price: Number(item.price),
+        point: validNumber(item.point)
+          ? Number(item.point)
+          : null,
+        updatedAt:
+          book.markets?.[market]?.last_update ||
+          book.last_update ||
+          oddsFeed.updated_at
+      });
     }
 
-    candidates.sort((a, b) =>
-      b.point - a.point ||
-      b.price - a.price
+    return prices;
+  }
+
+  function bestPrice(prices, market, side) {
+    if (!prices.length) return null;
+
+    const sorted = [...prices].sort((a, b) => {
+      if (market === 'spreads') {
+        return b.point - a.point || b.price - a.price;
+      }
+
+      if (market === 'totals') {
+        return side === 'Over'
+          ? a.point - b.point || b.price - a.price
+          : b.point - a.point || b.price - a.price;
+      }
+
+      return b.price - a.price;
+    });
+
+    return sorted[0];
+  }
+
+  function priceText(item, market) {
+    if (!item) return '—';
+
+    if (market === 'h2h') {
+      return money(item.price);
+    }
+
+    const line = market === 'spreads'
+      ? points(item.point)
+      : String(item.point);
+
+    return line + ' (' + money(item.price) + ')';
+  }
+
+  function comparisonRow(label, game, market, name) {
+    const prices = availablePrices(game, market, name);
+    const best = bestPrice(prices, market, name);
+
+    const fanduel = prices.find(item =>
+      item.key === 'fanduel'
     );
 
-    return candidates[0] || null;
-  }
-
-  function bestMoneyline(game, teamName) {
-    const candidates = [];
-
-    for (const book of game.bookmakers || []) {
-      const item = outcome(book, 'h2h', teamName);
-
-      if (
-        item &&
-        Number.isFinite(Number(item.price))
-      ) {
-        candidates.push({
-          price: Number(item.price),
-          book: book.title || book.key || 'Sportsbook'
-        });
-      }
-    }
-
-    candidates.sort((a, b) => b.price - a.price);
-
-    return candidates[0] || null;
-  }
-
-  function bestTotal(game, side) {
-    const candidates = [];
-
-    for (const book of game.bookmakers || []) {
-      const item = outcome(book, 'totals', side);
-
-      if (
-        item &&
-        Number.isFinite(Number(item.point)) &&
-        Number.isFinite(Number(item.price))
-      ) {
-        candidates.push({
-          point: Number(item.point),
-          price: Number(item.price),
-          book: book.title || book.key || 'Sportsbook'
-        });
-      }
-    }
-
-    candidates.sort((a, b) =>
-      side === 'Over'
-        ? a.point - b.point || b.price - a.price
-        : b.point - a.point || b.price - a.price
+    const draftkings = prices.find(item =>
+      item.key === 'draftkings'
     );
 
-    return candidates[0] || null;
-  }
-
-  function matchGame(awayName, homeName) {
-    if (!oddsFeed?.games) return null;
-
-    // Require both teams to match. Do not guess
-    // based on just one team or kickoff time.
-    return oddsFeed.games.find(game => {
-      const home = normalize(game.home_team);
-      const away = normalize(game.away_team);
-      const displayedHome = normalize(homeName);
-      const displayedAway = normalize(awayName);
-
-      return home === displayedHome &&
-        away === displayedAway;
-    }) || null;
-  }
-
-  function oddsLine(label, item, format) {
-    if (!item) return '';
+    if (!prices.length) return '';
 
     return `
-      <div style="margin-top:5px">
-        <strong>${escapeHTML(label)}:</strong>
-        ${escapeHTML(format(item))}
-        <span style="opacity:.75">
-          · ${escapeHTML(item.book)}
-        </span>
+      <div style="
+        padding:10px 0;
+        border-bottom:1px solid #3c3c42;
+      ">
+        <div style="
+          font-weight:750;
+          color:#ffffff;
+          margin-bottom:7px;
+        ">
+          ${escapeHTML(label)}
+        </div>
+
+        <div style="
+          display:grid;
+          grid-template-columns:1fr 1fr;
+          gap:8px;
+          margin-bottom:7px;
+        ">
+          <div style="
+            background:#17171b;
+            border:1px solid #44444a;
+            border-radius:8px;
+            padding:8px;
+          ">
+            <div style="
+              color:#b8b8c0;
+              font-size:11px;
+            ">FanDuel</div>
+            <strong style="font-size:13px">
+              ${escapeHTML(priceText(fanduel, market))}
+            </strong>
+          </div>
+
+          <div style="
+            background:#17171b;
+            border:1px solid #44444a;
+            border-radius:8px;
+            padding:8px;
+          ">
+            <div style="
+              color:#b8b8c0;
+              font-size:11px;
+            ">DraftKings</div>
+            <strong style="font-size:13px">
+              ${escapeHTML(priceText(draftkings, market))}
+            </strong>
+          </div>
+        </div>
+
+        <div style="
+          font-size:12px;
+          color:#ff6976;
+        ">
+          Best available:
+          <strong>
+            ${escapeHTML(priceText(best, market))}
+          </strong>
+          · ${escapeHTML(best.book)}
+        </div>
       </div>`;
   }
 
-  function gameOddsHTML(game) {
-    const away = game.away_team;
-    const home = game.home_team;
+  function marketDisagreement(game) {
+    const notes = [];
 
-    const awaySpread = bestSpread(game, away);
-    const homeSpread = bestSpread(game, home);
+    for (const name of [
+      game.away_team,
+      game.home_team
+    ]) {
+      const spreads = availablePrices(
+        game, 'spreads', name
+      );
 
-    const awayML = bestMoneyline(game, away);
-    const homeML = bestMoneyline(game, home);
+      if (spreads.length >= 2) {
+        const values = spreads.map(item => item.point);
 
-    const over = bestTotal(game, 'Over');
-    const under = bestTotal(game, 'Under');
+        const range = Math.max(...values) -
+          Math.min(...values);
 
-    const stale = isStale();
+        if (range >= 1.5) {
+          notes.push(
+            name + ': ' + range.toFixed(1) +
+            '-point spread difference'
+          );
+        }
+      }
+    }
 
-    const content = [
-      oddsLine(
-        away + ' spread',
-        awaySpread,
-        item => points(item.point) + ' (' + money(item.price) + ')'
+    const totals = availablePrices(
+      game, 'totals', 'Over'
+    );
+
+    if (totals.length >= 2) {
+      const values = totals.map(item => item.point);
+
+      const range = Math.max(...values) -
+        Math.min(...values);
+
+      if (range >= 2.5) {
+        notes.push(
+          range.toFixed(1) +
+          '-point totals difference'
+        );
+      }
+    }
+
+    if (!notes.length) return '';
+
+    return `
+      <div style="
+        margin-top:10px;
+        padding:9px;
+        background:#321b21;
+        border-left:3px solid #e32636;
+        border-radius:6px;
+        font-size:12px;
+      ">
+        <strong>MARKET DISAGREEMENT — RESEARCH ONLY</strong>
+        <div>${notes.map(escapeHTML).join('<br>')}</div>
+        <div style="opacity:.8;margin-top:4px">
+          Differences can reflect stale or suspended markets.
+          Not proof of a betting edge.
+        </div>
+      </div>`;
+  }
+
+  function matchGame(awayName, homeName) {
+    if (!Array.isArray(oddsFeed?.games)) return null;
+
+    const away = normalize(awayName);
+    const home = normalize(homeName);
+
+    return oddsFeed.games.find(game =>
+      normalize(game.away_team) === away &&
+      normalize(game.home_team) === home
+    ) || null;
+  }
+
+  function gameOddsHTML(game, phase) {
+    const rows = [
+      comparisonRow(
+        game.away_team + ' spread',
+        game, 'spreads', game.away_team
       ),
-      oddsLine(
-        home + ' spread',
-        homeSpread,
-        item => points(item.point) + ' (' + money(item.price) + ')'
+      comparisonRow(
+        game.home_team + ' spread',
+        game, 'spreads', game.home_team
       ),
-      oddsLine(
-        away + ' ML',
-        awayML,
-        item => money(item.price)
+      comparisonRow(
+        game.away_team + ' moneyline',
+        game, 'h2h', game.away_team
       ),
-      oddsLine(
-        home + ' ML',
-        homeML,
-        item => money(item.price)
+      comparisonRow(
+        game.home_team + ' moneyline',
+        game, 'h2h', game.home_team
       ),
-      oddsLine(
+      comparisonRow(
         'Over',
-        over,
-        item => item.point + ' (' + money(item.price) + ')'
+        game, 'totals', 'Over'
       ),
-      oddsLine(
+      comparisonRow(
         'Under',
-        under,
-        item => item.point + ' (' + money(item.price) + ')'
+        game, 'totals', 'Under'
       )
-    ].join('');
+    ].filter(Boolean).join('');
 
-    if (!content) return '';
+    if (!rows) return '';
+
+    const phaseWarning = phase === 'live'
+      ? 'GAME IN PROGRESS — NOT VERIFIED LIVE BETTING ODDS'
+      : phase === 'final'
+        ? 'GAME FINAL — HISTORICAL SNAPSHOT'
+        : 'PREGAME MARKET SNAPSHOT';
 
     return `
       <div class="sportsbook-odds"
         style="
           margin-top:12px;
           padding:12px;
-          border:1px solid rgba(140,140,140,.35);
+          border:1px solid #44444a;
           border-radius:10px;
           font-size:13px;
-          line-height:1.6;
+          line-height:1.5;
         ">
         <strong>Sportsbook comparison</strong>
-        <div style="font-size:11px;opacity:.8">
-          ${stale ? 'STALE SNAPSHOT — NOT LIVE' : 'Latest saved snapshot'}
-        </div>
-        ${content}
+
         <div style="
-          margin-top:8px;
           font-size:11px;
-          opacity:.75;
+          color:${stale() ? '#ff6976' : '#b8b8c0'};
+          margin:5px 0 8px;
         ">
-          Prices checked ${escapeHTML(
-            dateLabel(oddsFeed.updated_at)
-          )}.
-          Verify in sportsbook before betting.
+          ${stale() ? 'STALE SNAPSHOT · ' : ''}
+          ${phaseWarning}
+        </div>
+
+        ${rows}
+
+        ${marketDisagreement(game)}
+
+        <div style="
+          margin-top:10px;
+          font-size:11px;
+          color:#b8b8c0;
+        ">
+          Snapshot: ${escapeHTML(dateLabel(oddsFeed.updated_at))}
+          <br>
+          Prices are not guaranteed current.
+          Verify in the sportsbook before betting.
         </div>
       </div>`;
   }
 
   function renderBanner() {
+    if (!oddsFeed) return;
+
     const cards = document.getElementById('gamecards');
-    if (!cards || !oddsFeed) return;
+    if (!cards) return;
 
     let banner = document.getElementById('odds-status');
 
@@ -279,7 +401,7 @@
       banner.style.cssText = [
         'padding:12px',
         'margin-bottom:12px',
-        'border:1px solid rgba(140,140,140,.35)',
+        'border:1px solid #44444a',
         'border-radius:10px',
         'font-size:13px',
         'line-height:1.6'
@@ -290,32 +412,47 @@
 
     const remaining = oddsFeed.quota?.remaining ?? 'Unknown';
     const reserve = oddsFeed.quota?.reserve ?? 30;
-    const stale = isStale();
 
     banner.innerHTML = `
       <strong>Sportsbook odds</strong>
       <div>
-        ${stale
-          ? '⚠️ Odds are stale — verify all prices'
-          : 'Latest saved sportsbook snapshot'}
+        ${stale()
+          ? '⚠️ STALE — Prices require verification'
+          : 'Latest saved market snapshot'}
       </div>
       <div>
         Updated: ${escapeHTML(dateLabel(oddsFeed.updated_at))}
       </div>
       <div>
-        Free API credits remaining:
+        Free credits remaining:
         <strong>${escapeHTML(remaining)}</strong>
         · Reserve: ${escapeHTML(reserve)}
       </div>
-      <div style="opacity:.75;font-size:11px">
-        Odds refresh through GitHub Actions,
-        not the scoreboard Refresh button.
+      <div style="font-size:11px;opacity:.75">
+        Odds update on the GitHub schedule.
+        Refreshing scores does not request new odds.
       </div>`;
   }
 
+  function gamePhase(card) {
+    const text = card.querySelector('.score')?.textContent || '';
+
+    if (/final/i.test(text)) return 'final';
+
+    if (
+      /q[1-4]|halftime|overtime|\bot\b/i.test(text)
+    ) {
+      return 'live';
+    }
+
+    return 'pregame';
+  }
+
   function renderOdds() {
+    if (!oddsFeed) return;
+
     const cards = document.getElementById('gamecards');
-    if (!cards || !oddsFeed) return;
+    if (!cards) return;
 
     renderBanner();
 
@@ -324,22 +461,22 @@
         ...card.querySelectorAll('.teamrow strong')
       ].map(node => node.textContent.trim());
 
-      if (names.length < 2) continue;
+      if (names.length !== 2) continue;
 
-      const [awayName, homeName] = names;
-
-      const matchingGame = matchGame(awayName, homeName);
-
+      const game = matchGame(names[0], names[1]);
       const existing = card.querySelector('.sportsbook-odds');
 
-      if (!matchingGame) {
+      if (!game) {
         if (existing) existing.remove();
         continue;
       }
 
-      const html = gameOddsHTML(matchingGame);
+      const html = gameOddsHTML(game, gamePhase(card));
 
-      if (!html) continue;
+      if (!html) {
+        if (existing) existing.remove();
+        continue;
+      }
 
       if (existing) {
         if (existing.outerHTML !== html) {
@@ -360,7 +497,7 @@
         { cache: 'no-store' }
       );
 
-      if (!response.ok) throw new Error('Odds unavailable');
+      if (!response.ok) throw new Error('Odds feed unavailable');
 
       const data = await response.json();
 
@@ -372,20 +509,15 @@
       renderOdds();
 
     } catch (error) {
-      console.warn('Sportsbook odds unavailable:', error);
+      console.warn('Odds unavailable:', error);
     }
   }
 
   function start() {
     const cards = document.getElementById('gamecards');
-
     if (!cards) return;
 
-    // Existing app.js replaces the game cards when
-    // ESPN scores refresh. Restore odds after that.
-    const observer = new MutationObserver(() => {
-      renderOdds();
-    });
+    const observer = new MutationObserver(renderOdds);
 
     observer.observe(cards, {
       childList: true,
@@ -394,8 +526,8 @@
 
     loadOdds();
 
-    // Re-check the stale warning every minute.
-    setInterval(renderBanner, 60000);
+    // Update freshness warnings without API requests.
+    setInterval(renderOdds, DISPLAY_REFRESH_MS);
   }
 
   if (document.readyState === 'loading') {
