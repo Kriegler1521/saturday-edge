@@ -12,12 +12,19 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
       - name: Refresh game data
-        run: python update_games.py
+        run: |
+          mkdir -p data
+          python update_games.py
+
       - name: Commit refreshed data
         run: |
           git config user.name 'github-actions[bot]'
