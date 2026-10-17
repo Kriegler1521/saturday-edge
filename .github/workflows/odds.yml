@@ -3,6 +3,16 @@ name: Update Sportsbook Odds
 
 on:
   workflow_dispatch:
+  schedule:
+    # GitHub Actions schedules use UTC.
+    # Thursday: 12 PM and 6 PM Eastern (EDT)
+    - cron: '0 16,22 * * 4'
+
+    # Friday: 12 PM and 6 PM Eastern (EDT)
+    - cron: '0 16,22 * * 5'
+
+    # Saturday: Every 2 hours, 10 AM–10 PM Eastern (EDT)
+    - cron: '0 14,16,18,20,22,0,2 * * 6,0'
 
 permissions:
   contents: write
@@ -33,7 +43,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add data/odds.json
+
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
