@@ -40,7 +40,7 @@
 <div>
 <small>THIS WEEK</small>
 <h2>Game board</h2>
-<p>College football scores and experimental model projections.</p>
+<p>College football scores, experimental projections, and sportsbook comparisons.</p>
 </div>
 <button id="reload">Refresh</button>
 </div>
@@ -230,6 +230,19 @@ module attempts direct ESPN updates while the app is open.
 If those requests are blocked, the saved game feed remains available.
 </p>
 
+<h3>Sportsbook odds</h3>
+<p>
+Sportsbook prices are retrieved from The Odds API through
+GitHub Actions and saved as a public odds snapshot.
+Available spreads, moneylines, and totals are compared
+across sportsbooks.
+The displayed timestamp indicates when prices were retrieved.
+Older prices are labeled stale and must not be treated
+as current betting lines.
+The scoreboard Refresh button does not trigger a new
+sportsbook API request.
+</p>
+
 <h3>Five-model engine</h3>
 <p>
 Calculates weighted scoring margins from values you enter.
@@ -241,9 +254,11 @@ Missing inputs are never fabricated.
 
 <h3>Odds and risk</h3>
 <p>
-Sportsbook prices and personnel checks must be verified manually.
+Pregame projections are not live in-game betting models.
+Sportsbook prices, personnel, weather, and game state
+must be verified before considering a wager.
 This is a research screen, not a calibrated betting recommendation.
-No gambling or account integrations.
+No gambling account integrations or automatic bets.
 </p>
 
 <h3>Privacy</h3>
@@ -267,6 +282,7 @@ Saturday Edge • Free static PWA • Research only
 
 <script src="app.js" defer></script>
 <script src="live-scores.js" defer></script>
+<script src="odds-display.js" defer></script>
 
 </body>
 </html>
