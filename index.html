@@ -230,6 +230,15 @@ module attempts direct ESPN updates while the app is open.
 If those requests are blocked, the saved game feed remains available.
 </p>
 
+<h3>AP Top 25 rankings</h3>
+<p>
+Rankings are retrieved from ESPN's AP Poll feed and
+matched to teams using ESPN team IDs.
+Rankings reflect the latest available published AP Poll,
+which may differ from live game results.
+Unranked teams do not receive a ranking badge.
+</p>
+
 <h3>Sportsbook odds</h3>
 <p>
 Sportsbook prices are retrieved from The Odds API through
@@ -282,6 +291,7 @@ Saturday Edge • Free static PWA • Research only
 
 <script src="app.js" defer></script>
 <script src="live-scores.js" defer></script>
+<script src="ap-rankings.js" defer></script>
 <script src="odds-display.js" defer></script>
 
 </body>
