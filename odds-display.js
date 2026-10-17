@@ -1,9 +1,9 @@
 
 'use strict';
 
-// Saturday Edge — Sportsbook Comparison v2
-// Uses saved odds snapshots, never a browser-side API key.
-// Does not alter scores, predictions, or the private ledger.
+// Saturday Edge — Expandable Sportsbook Comparisons
+// Uses saved public odds, never the private API key.
+// Preserves scoreboard, predictions, and private ledger.
 
 (() => {
   const ODDS_URL = './data/odds.json';
@@ -11,6 +11,9 @@
   const DISPLAY_REFRESH_MS = 60000;
 
   let oddsFeed = null;
+
+  // Remember which games the user expanded.
+  const expandedGames = new Set();
 
   const escapeHTML = value => String(value ?? '')
     .replace(/[&<>"']/g, char => ({
@@ -83,15 +86,11 @@
     return book.title || book.key || 'Sportsbook';
   }
 
-  function findBook(game, key) {
-    return (game.bookmakers || []).find(book =>
-      String(book.key || '').toLowerCase() === key
-    ) || null;
-  }
-
   function marketOutcome(book, market, name) {
     return (book?.markets?.[market]?.outcomes || [])
-      .find(item => normalize(item.name) === normalize(name)) || null;
+      .find(item =>
+        normalize(item.name) === normalize(name)
+      ) || null;
   }
 
   function availablePrices(game, market, name) {
@@ -115,11 +114,7 @@
         price: Number(item.price),
         point: validNumber(item.point)
           ? Number(item.point)
-          : null,
-        updatedAt:
-          book.markets?.[market]?.last_update ||
-          book.last_update ||
-          oddsFeed.updated_at
+          : null
       });
     }
 
@@ -129,7 +124,7 @@
   function bestPrice(prices, market, side) {
     if (!prices.length) return null;
 
-    const sorted = [...prices].sort((a, b) => {
+    return [...prices].sort((a, b) => {
       if (market === 'spreads') {
         return b.point - a.point || b.price - a.price;
       }
@@ -141,9 +136,7 @@
       }
 
       return b.price - a.price;
-    });
-
-    return sorted[0];
+    })[0];
   }
 
   function priceText(item, market) {
@@ -162,6 +155,9 @@
 
   function comparisonRow(label, game, market, name) {
     const prices = availablePrices(game, market, name);
+
+    if (!prices.length) return '';
+
     const best = bestPrice(prices, market, name);
 
     const fanduel = prices.find(item =>
@@ -171,8 +167,6 @@
     const draftkings = prices.find(item =>
       item.key === 'draftkings'
     );
-
-    if (!prices.length) return '';
 
     return `
       <div style="
@@ -189,7 +183,7 @@
 
         <div style="
           display:grid;
-          grid-template-columns:1fr 1fr;
+          grid-template-columns:minmax(0,1fr) minmax(0,1fr);
           gap:8px;
           margin-bottom:7px;
         ">
@@ -198,6 +192,7 @@
             border:1px solid #44444a;
             border-radius:8px;
             padding:8px;
+            min-width:0;
           ">
             <div style="
               color:#b8b8c0;
@@ -213,6 +208,7 @@
             border:1px solid #44444a;
             border-radius:8px;
             padding:8px;
+            min-width:0;
           ">
             <div style="
               color:#b8b8c0;
@@ -293,10 +289,12 @@
         font-size:12px;
       ">
         <strong>MARKET DISAGREEMENT — RESEARCH ONLY</strong>
-        <div>${notes.map(escapeHTML).join('<br>')}</div>
+        <div>
+          ${notes.map(escapeHTML).join('<br>')}
+        </div>
         <div style="opacity:.8;margin-top:4px">
-          Differences can reflect stale or suspended markets.
-          Not proof of a betting edge.
+          Differences may reflect stale or suspended markets.
+          They do not establish a betting edge.
         </div>
       </div>`;
   }
@@ -313,7 +311,28 @@
     ) || null;
   }
 
+  function gamePhase(card) {
+    const text =
+      card.querySelector('.score')?.textContent || '';
+
+    if (/final/i.test(text)) return 'final';
+
+    if (
+      /q[1-4]|halftime|overtime|\bot\b/i.test(text)
+    ) {
+      return 'live';
+    }
+
+    return 'pregame';
+  }
+
   function gameOddsHTML(game, phase) {
+    const gameKey =
+      normalize(game.away_team) + '-' +
+      normalize(game.home_team);
+
+    const expanded = expandedGames.has(gameKey);
+
     const rows = [
       comparisonRow(
         game.away_team + ' spread',
@@ -343,46 +362,103 @@
 
     if (!rows) return '';
 
-    const phaseWarning = phase === 'live'
-      ? 'GAME IN PROGRESS — NOT VERIFIED LIVE BETTING ODDS'
+    const warning = phase === 'live'
+      ? 'IN PROGRESS · NOT VERIFIED LIVE ODDS'
       : phase === 'final'
-        ? 'GAME FINAL — HISTORICAL SNAPSHOT'
-        : 'PREGAME MARKET SNAPSHOT';
+        ? 'FINAL · HISTORICAL SNAPSHOT'
+        : 'PREGAME SNAPSHOT';
+
+    const freshness = stale()
+      ? 'STALE'
+      : 'SAVED SNAPSHOT';
 
     return `
-      <div class="sportsbook-odds"
+      <div
+        class="sportsbook-odds"
+        data-odds-key="${escapeHTML(gameKey)}"
         style="
           margin-top:12px;
-          padding:12px;
+          padding:0;
           border:1px solid #44444a;
           border-radius:10px;
           font-size:13px;
           line-height:1.5;
-        ">
-        <strong>Sportsbook comparison</strong>
+          overflow:hidden;
+        "
+      >
+        <button
+          type="button"
+          class="odds-toggle"
+          data-odds-toggle="${escapeHTML(gameKey)}"
+          aria-expanded="${expanded}"
+          style="
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap:10px;
+            width:100%;
+            padding:14px;
+            background:#25252b;
+            color:#ffffff;
+            border:0;
+            border-radius:0;
+            text-align:left;
+          "
+        >
+          <span style="min-width:0">
+            <strong style="
+              display:block;
+              font-size:14px;
+              margin-bottom:3px;
+            ">
+              Sportsbook odds
+            </strong>
+            <span style="
+              display:block;
+              font-size:11px;
+              color:#ff6976;
+              line-height:1.5;
+            ">
+              ${escapeHTML(freshness)}
+              · ${escapeHTML(warning)}
+            </span>
+          </span>
 
-        <div style="
-          font-size:11px;
-          color:${stale() ? '#ff6976' : '#b8b8c0'};
-          margin:5px 0 8px;
-        ">
-          ${stale() ? 'STALE SNAPSHOT · ' : ''}
-          ${phaseWarning}
-        </div>
+          <span
+            aria-hidden="true"
+            style="
+              font-size:20px;
+              color:#ff6976;
+              flex-shrink:0;
+            "
+          >
+            ${expanded ? '−' : '+'}
+          </span>
+        </button>
 
-        ${rows}
+        <div
+          class="odds-details"
+          style="
+            display:${expanded ? 'block' : 'none'};
+            padding:12px;
+            background:#232328;
+          "
+        >
+          ${rows}
 
-        ${marketDisagreement(game)}
+          ${marketDisagreement(game)}
 
-        <div style="
-          margin-top:10px;
-          font-size:11px;
-          color:#b8b8c0;
-        ">
-          Snapshot: ${escapeHTML(dateLabel(oddsFeed.updated_at))}
-          <br>
-          Prices are not guaranteed current.
-          Verify in the sportsbook before betting.
+          <div style="
+            margin-top:10px;
+            font-size:11px;
+            color:#b8b8c0;
+          ">
+            Snapshot:
+            ${escapeHTML(dateLabel(oddsFeed.updated_at))}
+            <br>
+            Prices are not guaranteed current.
+            Verify in the sportsbook before betting.
+          </div>
         </div>
       </div>`;
   }
@@ -417,35 +493,21 @@
       <strong>Sportsbook odds</strong>
       <div>
         ${stale()
-          ? '⚠️ STALE — Prices require verification'
-          : 'Latest saved market snapshot'}
+          ? '⚠️ STALE — Verify sportsbook prices'
+          : 'Latest saved sportsbook snapshot'}
       </div>
       <div>
-        Updated: ${escapeHTML(dateLabel(oddsFeed.updated_at))}
+        Updated:
+        ${escapeHTML(dateLabel(oddsFeed.updated_at))}
       </div>
       <div>
-        Free credits remaining:
+        Free API credits remaining:
         <strong>${escapeHTML(remaining)}</strong>
         · Reserve: ${escapeHTML(reserve)}
       </div>
       <div style="font-size:11px;opacity:.75">
-        Odds update on the GitHub schedule.
-        Refreshing scores does not request new odds.
+        Score refreshes do not request new odds.
       </div>`;
-  }
-
-  function gamePhase(card) {
-    const text = card.querySelector('.score')?.textContent || '';
-
-    if (/final/i.test(text)) return 'final';
-
-    if (
-      /q[1-4]|halftime|overtime|\bot\b/i.test(text)
-    ) {
-      return 'live';
-    }
-
-    return 'pregame';
   }
 
   function renderOdds() {
@@ -471,7 +533,10 @@
         continue;
       }
 
-      const html = gameOddsHTML(game, gamePhase(card));
+      const html = gameOddsHTML(
+        game,
+        gamePhase(card)
+      );
 
       if (!html) {
         if (existing) existing.remove();
@@ -490,6 +555,46 @@
     }
   }
 
+  function handleToggle(event) {
+    const button = event.target.closest(
+      '[data-odds-toggle]'
+    );
+
+    if (!button) return;
+
+    const gameKey = button.dataset.oddsToggle;
+
+    if (expandedGames.has(gameKey)) {
+      expandedGames.delete(gameKey);
+    } else {
+      expandedGames.add(gameKey);
+    }
+
+    // Update only this game to preserve scroll position.
+    const card = button.closest('.game');
+
+    if (!card) return;
+
+    const names = [
+      ...card.querySelectorAll('.teamrow strong')
+    ].map(node => node.textContent.trim());
+
+    if (names.length !== 2) return;
+
+    const game = matchGame(names[0], names[1]);
+
+    if (!game) return;
+
+    const existing = card.querySelector('.sportsbook-odds');
+
+    if (existing) {
+      existing.outerHTML = gameOddsHTML(
+        game,
+        gamePhase(card)
+      );
+    }
+  }
+
   async function loadOdds() {
     try {
       const response = await fetch(
@@ -497,7 +602,9 @@
         { cache: 'no-store' }
       );
 
-      if (!response.ok) throw new Error('Odds feed unavailable');
+      if (!response.ok) {
+        throw new Error('Odds feed unavailable');
+      }
 
       const data = await response.json();
 
@@ -509,14 +616,18 @@
       renderOdds();
 
     } catch (error) {
-      console.warn('Odds unavailable:', error);
+      console.warn('Sportsbook odds unavailable:', error);
     }
   }
 
   function start() {
     const cards = document.getElementById('gamecards');
+
     if (!cards) return;
 
+    cards.addEventListener('click', handleToggle);
+
+    // Restore odds when the scoreboard refreshes.
     const observer = new MutationObserver(renderOdds);
 
     observer.observe(cards, {
@@ -526,7 +637,7 @@
 
     loadOdds();
 
-    // Update freshness warnings without API requests.
+    // Refresh stale labels without consuming API credits.
     setInterval(renderOdds, DISPLAY_REFRESH_MS);
   }
 
