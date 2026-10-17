@@ -1,8 +1,8 @@
 
 'use strict';
 
-// Saturday Edge — Phase 2.5
-// Live scores, AP rankings, records, predictions and private ledger.
+// Saturday Edge — ESPN-inspired scoreboard layout.
+// Preserves the existing private betting ledger.
 
 const $ = id => document.getElementById(id);
 
@@ -24,6 +24,7 @@ const esc = value => String(value ?? '').replace(
 
 function dateFmt(value) {
   if (!value) return 'Unknown';
+
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return 'Unknown';
 
@@ -39,6 +40,7 @@ function dateFmt(value) {
 
 function timeFmt(value) {
   if (!value) return 'Unknown';
+
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return 'Unknown';
 
@@ -50,6 +52,7 @@ function timeFmt(value) {
 }
 
 // Navigation
+
 for (const button of document.querySelectorAll('nav button')) {
   button.addEventListener('click', () => {
     document.querySelectorAll('nav button').forEach(item => {
@@ -57,16 +60,42 @@ for (const button of document.querySelectorAll('nav button')) {
     });
 
     document.querySelectorAll('.tab').forEach(tab => {
-      tab.classList.toggle('active', tab.id === button.dataset.tab);
+      tab.classList.toggle(
+        'active',
+        tab.id === button.dataset.tab
+      );
     });
   });
 }
 
 // Scoreboard state
+
 let savedData = null;
 let liveData = null;
 let lastLiveSuccess = null;
 let refreshing = false;
+
+function normalizeTeam(team, fallbackScore) {
+  if (typeof team === 'string') {
+    return {
+      name: team,
+      abbreviation: team.slice(0, 2),
+      logo: null,
+      score: fallbackScore ?? null,
+      rank: null,
+      record: ''
+    };
+  }
+
+  return team || {
+    name: 'Unknown',
+    abbreviation: '?',
+    logo: null,
+    score: null,
+    rank: null,
+    record: ''
+  };
+}
 
 function teamBadge(team) {
   const abbreviation = esc(
@@ -91,89 +120,47 @@ function teamBadge(team) {
     </span>`;
 }
 
-function verifiedAPRank(team) {
-  // Only use apRank populated from an explicitly AP-labeled source.
-  const rank = Number(team.apRank);
+function teamRank(team) {
+  const value = Number(
+    team.apRank ?? team.rank ?? team.ranking
+  );
 
-  return Number.isInteger(rank) &&
-    rank >= 1 &&
-    rank <= 25
-      ? rank
-      : null;
+  if (
+    !Number.isInteger(value) ||
+    value < 1 ||
+    value > 25
+  ) {
+    return '';
+  }
+
+  return `<span class="ap-rank">${value}</span>`;
 }
 
-function teamRow(team) {
-  const rank = verifiedAPRank(team);
+function teamRecord(team) {
+  const value = String(
+    team.record ?? team.recordSummary ?? ''
+  ).trim();
 
-  const record = typeof team.record === 'string' &&
-    /^\d+\s*-\s*\d+(?:\s*-\s*\d+)?$/.test(team.record.trim())
-      ? team.record.trim()
-      : '';
+  return value
+    ? `<span class="team-record">(${esc(value.replace(/^\(|\)$/g, ''))})</span>`
+    : '';
+}
 
-  const rankHTML = rank === null ? '' : `
-    <span
-      aria-label="AP rank ${rank}"
-      title="AP Top 25"
-      style="
-        display:inline-flex;
-        align-items:center;
-        justify-content:center;
-        flex-shrink:0;
-        min-width:27px;
-        padding:2px 5px;
-        border-radius:5px;
-        background:#3a2026;
-        color:#ff6976;
-        font-size:12px;
-        font-weight:800;
-      "
-    >${rank}</span>`;
-
-  const recordHTML = record ? `
-    <span style="
-      font-size:11px;
-      color:#a9a9b1;
-      font-weight:400;
-      white-space:nowrap;
-    ">(${esc(record)})</span>` : '';
+function teamRow(team, showScore) {
+  const score = showScore
+    ? (team.score == null ? '—' : esc(team.score))
+    : '';
 
   return `
     <div class="teamrow">
       ${teamBadge(team)}
-      <span style="
-        display:flex;
-        align-items:center;
-        gap:6px;
-        flex-wrap:wrap;
-        min-width:0;
-      ">
-        ${rankHTML}
+      ${teamRank(team)}
+      <div class="team-details">
         <strong>${esc(team.name)}</strong>
-        ${recordHTML}
-      </span>
+        ${teamRecord(team)}
+      </div>
+      <span class="team-score">${score}</span>
     </div>`;
-}
-
-function normalizeTeam(team, fallbackScore) {
-  if (typeof team === 'string') {
-    return {
-      name: team,
-      abbreviation: team.slice(0, 2),
-      logo: null,
-      score: fallbackScore ?? null,
-      apRank: null,
-      record: ''
-    };
-  }
-
-  return team || {
-    name: 'Unknown',
-    abbreviation: '?',
-    logo: null,
-    score: null,
-    apRank: null,
-    record: ''
-  };
 }
 
 function projectionLabel(game, home, away) {
@@ -222,8 +209,13 @@ function gamePhase(game) {
     return 'final';
   }
 
-  if (game.gamePhase === 'live') return 'live';
-  if (game.gamePhase === 'pregame') return 'pregame';
+  if (game.gamePhase === 'live') {
+    return 'live';
+  }
+
+  if (game.gamePhase === 'pregame') {
+    return 'pregame';
+  }
 
   const status = String(game.status || '').toLowerCase();
 
@@ -275,9 +267,7 @@ function liveStatus(game) {
     return quarter + ' · ' + clock;
   }
 
-  if (quarter) return quarter;
-
-  return detail || 'LIVE';
+  return quarter || detail || 'LIVE';
 }
 
 function mergeGames() {
@@ -310,7 +300,6 @@ function mergeGames() {
       status: update.status,
       completed: update.completed,
       kickoff: update.kickoff || game.kickoff,
-
       gamePhase: update.gamePhase,
       period: update.period,
       clock: update.clock,
@@ -321,19 +310,20 @@ function mergeGames() {
         ...home,
         score: update.home?.score ?? home.score,
         logo: home.logo || update.home?.logo,
-        apRank: update.home?.apRank ?? home.apRank ?? null,
-        record: update.home?.record || home.record || ''
+        rank: update.home?.rank ?? home.rank,
+        apRank: update.home?.apRank ?? home.apRank,
+        record: update.home?.record || home.record
       },
 
       away: {
         ...away,
         score: update.away?.score ?? away.score,
         logo: away.logo || update.away?.logo,
-        apRank: update.away?.apRank ?? away.apRank ?? null,
-        record: update.away?.record || away.record || ''
+        rank: update.away?.rank ?? away.rank,
+        apRank: update.away?.apRank ?? away.apRank,
+        record: update.away?.record || away.record
       },
 
-      // Preserve the existing experimental prediction.
       prediction: game.prediction
     };
   });
@@ -381,45 +371,32 @@ function renderGames() {
 
         const phase = gamePhase(game);
         const status = liveStatus(game);
-
-        let scoreBox;
-
-        if (phase === 'live' || phase === 'final') {
-          scoreBox = `
-            <div class="score">
-              ${away.score == null ? '—' : esc(away.score)}
-              :
-              ${home.score == null ? '—' : esc(home.score)}
-              <small>${esc(status)}</small>
-            </div>`;
-        } else {
-          scoreBox = `
-            <div class="score">
-              <small>PREGAME</small>
-            </div>`;
-        }
+        const showScore =
+          phase === 'live' || phase === 'final';
 
         const updateNote =
           phase === 'live' && lastLiveSuccess
-            ? `<div class="fine">
-                Score checked ${esc(timeFmt(lastLiveSuccess))}
-              </div>`
+            ? `<div class="fine">Score checked ${esc(timeFmt(lastLiveSuccess))}</div>`
             : '';
 
         return `
           <div class="game">
+            <div class="game-header">
+              <span>${esc(dateFmt(game.kickoff))}</span>
+              <span class="game-status ${esc(phase)}">
+                ${esc(status)}
+              </span>
+            </div>
+
             <div class="matchup">
-              ${teamRow(away)}
-              ${teamRow(home)}
-              <p>
-                ${esc(dateFmt(game.kickoff))}
-                |
-                ${esc(game.status || 'Scheduled')}
-              </p>
+              ${teamRow(away, showScore)}
+              ${teamRow(home, showScore)}
+            </div>
+
+            <div class="game-details">
               ${projectionLabel(game, home, away)}
               ${updateNote}
             </div>
-            ${scoreBox}
           </div>`;
       }).join('')
     : '<div class="panel">No games available. Try Refresh.</div>';
@@ -523,10 +500,8 @@ loadSavedGames().then(() => {
   }
 });
 
-// live-scores.js handles automatic polling.
-// Do not create another timer here.
-
 // Five-model research calculator
+
 function normalCDF(x) {
   const t = 1 / (1 + .2316419 * Math.abs(x));
   const d = .3989422804014327 * Math.exp(-x * x / 2);
@@ -581,13 +556,11 @@ $('calculate').addEventListener('click', () => {
   }
 
   const total = inputs.reduce(
-    (sum, item) => sum + item.weight,
-    0
+    (sum, item) => sum + item.weight, 0
   );
 
   const margin = inputs.reduce(
-    (sum, item) => sum + item.value * item.weight,
-    0
+    (sum, item) => sum + item.value * item.weight, 0
   ) / total;
 
   const range =
@@ -642,6 +615,7 @@ injuries, weather and source freshness.`;
 
 // Private betting ledger
 // Keep this exact key to preserve existing wagers.
+
 const key = 'saturday-edge-private-ledger-v1';
 
 let bets = [];
@@ -874,6 +848,7 @@ $('import').addEventListener(
 );
 
 // Progressive web app
+
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
     .register('./sw.js')
