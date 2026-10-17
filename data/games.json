@@ -1,0 +1,565 @@
+{
+  "updated_at": "2026-10-17T14:57:26.268005+00:00",
+  "source": "ESPN public scoreboard (unofficial)",
+  "status": "updated",
+  "games": [
+    {
+      "id": "401858488",
+      "home": "Indiana Hoosiers",
+      "away": "Ohio State Buckeyes",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T16:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401856724",
+      "home": "Texas Longhorns",
+      "away": "Florida Gators",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T16:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401856720",
+      "home": "LSU Tigers",
+      "away": "Mississippi State Bulldogs",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T16:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401858268",
+      "home": "SMU Mustangs",
+      "away": "Virginia Cavaliers",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T16:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401858491",
+      "home": "Michigan State Spartans",
+      "away": "Northwestern Wildcats",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T16:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401856829",
+      "home": "West Virginia Mountaineers",
+      "away": "Cincinnati Bearcats",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T16:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401856830",
+      "home": "Kansas State Wildcats",
+      "away": "Kansas Jayhawks",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T16:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401858261",
+      "home": "Clemson Tigers",
+      "away": "Charleston Southern Buccaneers",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T16:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401858267",
+      "home": "Boston College Eagles",
+      "away": "Pittsburgh Panthers",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T16:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401862802",
+      "home": "Army Black Knights",
+      "away": "Florida Atlantic Owls",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T16:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401866441",
+      "home": "Bowling Green Falcons",
+      "away": "Ball State Cardinals",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T16:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401869957",
+      "home": "James Madison Dukes",
+      "away": "Georgia State Panthers",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T16:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401858489",
+      "home": "Maryland Terrapins",
+      "away": "Rutgers Scarlet Knights",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T16:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401856725",
+      "home": "Texas A&M Aggies",
+      "away": "The Citadel Bulldogs",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T17:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401862803",
+      "home": "Temple Owls",
+      "away": "Charlotte 49ers",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T17:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401866442",
+      "home": "Buffalo Bulls",
+      "away": "Massachusetts Minutemen",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T17:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401866443",
+      "home": "Central Michigan Chippewas",
+      "away": "Western Michigan Broncos",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T17:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401856719",
+      "home": "Georgia Bulldogs",
+      "away": "Auburn Tigers",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T19:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401856723",
+      "home": "Tennessee Volunteers",
+      "away": "Alabama Crimson Tide",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T19:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401856721",
+      "home": "Ole Miss Rebels",
+      "away": "Missouri Tigers",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T19:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401856828",
+      "home": "Texas Tech Red Raiders",
+      "away": "Arizona State Sun Devils",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T19:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401858264",
+      "home": "Virginia Tech Hokies",
+      "away": "Georgia Tech Yellow Jackets",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T19:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401858266",
+      "home": "Duke Blue Devils",
+      "away": "North Carolina Tar Heels",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T19:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401858490",
+      "home": "Michigan Wolverines",
+      "away": "Penn State Nittany Lions",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T19:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401864522",
+      "home": "Wyoming Cowboys",
+      "away": "Northern Illinois Huskies",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T19:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401864524",
+      "home": "Air Force Falcons",
+      "away": "UNLV Rebels",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T19:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401866444",
+      "home": "Eastern Michigan Eagles",
+      "away": "Toledo Rockets",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T19:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401866478",
+      "home": "Miami (OH) RedHawks",
+      "away": "Akron Zips",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T19:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401862805",
+      "home": "Rice Owls",
+      "away": "Tulsa Golden Hurricane",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T20:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401869966",
+      "home": "Louisiana Ragin' Cajuns",
+      "away": "Troy Trojans",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T21:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401860903",
+      "home": "Oregon State Beavers",
+      "away": "Washington State Cougars",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T22:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401858263",
+      "home": "Miami Hurricanes",
+      "away": "Florida State Seminoles",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T23:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401856726",
+      "home": "Vanderbilt Commodores",
+      "away": "Arkansas Razorbacks",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T23:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401856832",
+      "home": "Baylor Bears",
+      "away": "TCU Horned Frogs",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T23:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401862806",
+      "home": "South Florida Bulls",
+      "away": "Kent State Golden Flashes",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T23:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401864520",
+      "home": "North Dakota State Bison",
+      "away": "Nevada Wolf Pack",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T23:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401869934",
+      "home": "Southern Miss Golden Eagles",
+      "away": "Arkansas State Red Wolves",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T23:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401856809",
+      "home": "BYU Cougars",
+      "away": "Notre Dame Fighting Irish",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T23:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401858494",
+      "home": "UCLA Bruins",
+      "away": "Wisconsin Badgers",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T23:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401856722",
+      "home": "Oklahoma Sooners",
+      "away": "Kentucky Wildcats",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T23:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401856831",
+      "home": "Houston Cougars",
+      "away": "Oklahoma State Cowboys",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T23:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401858262",
+      "home": "Stanford Cardinal",
+      "away": "Elon Phoenix",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T23:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401858265",
+      "home": "Syracuse Orange",
+      "away": "Louisville Cardinals",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-17T23:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401862804",
+      "home": "UTSA Roadrunners",
+      "away": "Navy Midshipmen",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-18T00:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401871091",
+      "home": "UL Monroe Warhawks",
+      "away": "Louisiana Tech Bulldogs",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-18T00:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401864523",
+      "home": "UTEP Miners",
+      "away": "San Jos\u00e9 State Spartans",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-18T01:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401866445",
+      "home": "Sacramento State Hornets",
+      "away": "Ohio Bobcats",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-18T02:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401856833",
+      "home": "Colorado Buffaloes",
+      "away": "Utah Utes",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-18T02:15Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401858269",
+      "home": "California Golden Bears",
+      "away": "Wake Forest Demon Deacons",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-18T02:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401860904",
+      "home": "San Diego State Aztecs",
+      "away": "Fresno State Bulldogs",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-18T02:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401864521",
+      "home": "Hawai'i Rainbow Warriors",
+      "away": "New Mexico Lobos",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-18T02:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401858492",
+      "home": "Oregon Ducks",
+      "away": "Nebraska Cornhuskers",
+      "home_score": 0,
+      "away_score": 0,
+      "kickoff": "2026-10-18T03:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "401871067",
+      "home": "Middle Tennessee Blue Raiders",
+      "away": "Delaware Blue Hens",
+      "home_score": 33,
+      "away_score": 30,
+      "kickoff": "2026-10-13T23:00Z",
+      "status": "Final"
+    },
+    {
+      "id": "401871053",
+      "home": "Jacksonville State Gamecocks",
+      "away": "Florida International Panthers",
+      "home_score": 27,
+      "away_score": 24,
+      "kickoff": "2026-10-14T00:00Z",
+      "status": "Final"
+    },
+    {
+      "id": "401871054",
+      "home": "Missouri State Bears",
+      "away": "Kennesaw State Owls",
+      "home_score": 24,
+      "away_score": 21,
+      "kickoff": "2026-10-14T23:30Z",
+      "status": "Final"
+    },
+    {
+      "id": "401871068",
+      "home": "Sam Houston Bearkats",
+      "away": "Western Kentucky Hilltoppers",
+      "home_score": 3,
+      "away_score": 16,
+      "kickoff": "2026-10-15T00:00Z",
+      "status": "Final"
+    },
+    {
+      "id": "401862800",
+      "home": "UAB Blazers",
+      "away": "East Carolina Pirates",
+      "home_score": 30,
+      "away_score": 17,
+      "kickoff": "2026-10-15T23:30Z",
+      "status": "Final"
+    },
+    {
+      "id": "401869950",
+      "home": "Old Dominion Monarchs",
+      "away": "Georgia Southern Eagles",
+      "home_score": 15,
+      "away_score": 23,
+      "kickoff": "2026-10-15T23:30Z",
+      "status": "Final"
+    },
+    {
+      "id": "401860923",
+      "home": "Texas State Bobcats",
+      "away": "Colorado State Rams",
+      "home_score": 66,
+      "away_score": 27,
+      "kickoff": "2026-10-16T00:00Z",
+      "status": "Final"
+    },
+    {
+      "id": "401862801",
+      "home": "Tulane Green Wave",
+      "away": "Memphis Tigers",
+      "home_score": 31,
+      "away_score": 17,
+      "kickoff": "2026-10-16T23:30Z",
+      "status": "Final"
+    },
+    {
+      "id": "401858493",
+      "home": "Purdue Boilermakers",
+      "away": "Washington Huskies",
+      "home_score": 26,
+      "away_score": 38,
+      "kickoff": "2026-10-17T00:00Z",
+      "status": "Final"
+    },
+    {
+      "id": "401869844",
+      "home": "Coastal Carolina Chanticleers",
+      "away": "App State Mountaineers",
+      "home_score": 32,
+      "away_score": 35,
+      "kickoff": "2026-10-17T00:00Z",
+      "status": "Final"
+    }
+  ]
+}
