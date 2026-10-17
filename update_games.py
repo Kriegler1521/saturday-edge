@@ -29,10 +29,15 @@ def parse(event):
     if not home or not away:return None
     def team(s):
         t=s.get('team') or {}
+        team_id=str(t.get('id') or '')
         logos=t.get('logos') or []
-        logo=next((l.get('href') for l in logos if l.get('href','').startswith('https://')),None)
-        # Use a provider-supplied URL only, never construct an unverified logo path.
-        return {'id':str(t.get('id','')),'name':t.get('displayName','Unknown'),
+        logo=next((l.get('href') for l in logos if isinstance(l,dict) and str(l.get('href') or '').startswith('https://')),None)
+        # ESPN scoreboard responses often omit logos. Fall back to ESPN's
+        # standard CDN URL only for numeric ESPN team IDs. The app's image
+        # error handler can display initials if a specific logo is missing.
+        if not logo and team_id.isdecimal():
+            logo=f'https://a.espncdn.com/i/teamlogos/ncaa/500/{team_id}.png'
+        return {'id':team_id,'name':t.get('displayName','Unknown'),
                 'abbreviation':t.get('abbreviation',''), 'logo':logo,
                 'score':int(s['score']) if str(s.get('score','')).isdigit() else None}
     st=(event.get('status') or {}).get('type') or {}
