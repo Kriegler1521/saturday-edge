@@ -4,15 +4,9 @@ name: Update Sportsbook Odds
 on:
   workflow_dispatch:
   schedule:
-    # GitHub Actions schedules use UTC.
-    # Thursday: 12 PM and 6 PM Eastern (EDT)
-    - cron: '0 16,22 * * 4'
-
-    # Friday: 12 PM and 6 PM Eastern (EDT)
-    - cron: '0 16,22 * * 5'
-
-    # Saturday: Every 2 hours, 10 AM–10 PM Eastern (EDT)
-    - cron: '0 14,16,18,20,22,0,2 * * 6,0'
+    # Every hour, but only run API requests
+    # during selected Eastern Time windows.
+    - cron: '0 * * * *'
 
 permissions:
   contents: write
@@ -34,12 +28,55 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Check Eastern Time schedule
+        id: schedule
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python - <<'PY'
+          import os
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+
+          now = datetime.now(ZoneInfo("America/New_York"))
+          weekday = now.weekday()
+          hour = now.hour
+          month = now.month
+
+          # College football season: August–January.
+          in_season = month in (8, 9, 10, 11, 12, 1)
+
+          thursday = weekday == 3 and hour in (12, 18)
+          friday = weekday == 4 and hour in (12, 18)
+          saturday = weekday == 5 and hour in (
+              10, 12, 14, 16, 18, 20, 22
+          )
+
+          manual = os.environ["EVENT_NAME"] == "workflow_dispatch"
+
+          allowed = manual or (
+              in_season and (thursday or friday or saturday)
+          )
+
+          with open(os.environ["GITHUB_OUTPUT"], "a") as file:
+              file.write(
+                  "run_odds=" + str(allowed).lower() + "\n"
+              )
+
+          print(
+              "Eastern time:", now.isoformat(),
+              "| Odds request allowed:", allowed
+          )
+          PY
+
       - name: Retrieve sportsbook odds
+        if: steps.schedule.outputs.run_odds == 'true'
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python update_odds.py
 
       - name: Commit updated odds
+        if: steps.schedule.outputs.run_odds == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
