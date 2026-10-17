@@ -1,8 +1,10 @@
 
 /*
-  Saturday Edge — Phase 2.3
-  Live college football scoreboard
-  Scores, quarters, game clock and update timestamps.
+  Saturday Edge — Phase 2.4
+  Live college football scoreboard.
+  Adds AP Top 25 ranking and season records to team data.
+
+  Preserves scores, clocks, refreshes and predictions.
 */
 
 (() => {
@@ -23,6 +25,68 @@
     return Number.isFinite(number) ? number : null;
   }
 
+  function parseRecord(competitor) {
+    const records = Array.isArray(competitor.records)
+      ? competitor.records
+      : [];
+
+    const overall = records.find(record =>
+      String(record.type || '').toLowerCase() === 'total' ||
+      String(record.name || '').toLowerCase() === 'overall'
+    ) || records.find(record =>
+      String(record.summary || '').includes('-')
+    );
+
+    return overall?.summary || '';
+  }
+
+  function parseAPRank(competitor) {
+    // Only accept an explicitly identified AP poll ranking.
+    // ESPN's generic curRank is not always guaranteed to be AP.
+    const sources = [
+      competitor.team?.rankings,
+      competitor.rankings,
+      competitor.team?.ranks,
+      competitor.ranks
+    ];
+
+    for (const source of sources) {
+      if (!Array.isArray(source)) continue;
+
+      const ap = source.find(item => {
+        const label = [
+          item.name,
+          item.displayName,
+          item.shortName,
+          item.type,
+          item.poll?.name,
+          item.poll?.displayName
+        ].filter(Boolean).join(' ').toLowerCase();
+
+        return /\bap\b|associated press/.test(label);
+      });
+
+      if (!ap) continue;
+
+      const value = Number(
+        ap.current ??
+        ap.rank ??
+        ap.position ??
+        ap.value
+      );
+
+      if (
+        Number.isInteger(value) &&
+        value >= 1 &&
+        value <= 25
+      ) {
+        return value;
+      }
+    }
+
+    return null;
+  }
+
   function parseTeam(competitor) {
     const team = competitor.team || {};
 
@@ -34,7 +98,11 @@
         (team.id
           ? `https://a.espncdn.com/i/teamlogos/ncaa/500/${team.id}.png`
           : null),
-      score: parseScore(competitor.score)
+      score: parseScore(competitor.score),
+
+      // New optional team information.
+      apRank: parseAPRank(competitor),
+      record: parseRecord(competitor)
     };
   }
 
@@ -88,7 +156,6 @@
       completed,
       neutral: Boolean(competition.neutralSite),
 
-      // Phase 2.3 live game details
       gamePhase,
       period,
       clock,
