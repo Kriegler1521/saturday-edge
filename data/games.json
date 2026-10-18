@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T12:49:09.467788+00:00",
+  "updated_at": "2026-10-18T15:40:54.970485+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -1704,96 +1704,6 @@
       }
     },
     {
-      "id": "401856837",
-      "home": {
-        "id": "254",
-        "name": "Utah Utes",
-        "abbreviation": "UTAH",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
-        "score": 0
-      },
-      "away": {
-        "id": "248",
-        "name": "Houston Cougars",
-        "abbreviation": "HOU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
-        "score": 0
-      },
-      "kickoff": "2026-10-24T04:00Z",
-      "status": "Scheduled",
-      "completed": false,
-      "neutral": false,
-      "prediction": {
-        "home_margin": 4.5,
-        "home_spread": -4.5,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
-        "calibrated": false
-      }
-    },
-    {
-      "id": "401858499",
-      "home": {
-        "id": "26",
-        "name": "UCLA Bruins",
-        "abbreviation": "UCLA",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png",
-        "score": 0
-      },
-      "away": {
-        "id": "127",
-        "name": "Michigan State Spartans",
-        "abbreviation": "MSU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
-        "score": 0
-      },
-      "kickoff": "2026-10-24T04:00Z",
-      "status": "Scheduled",
-      "completed": false,
-      "neutral": false,
-      "prediction": {
-        "home_margin": 12.7,
-        "home_spread": -12.7,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
-        "calibrated": false
-      }
-    },
-    {
-      "id": "401858497",
-      "home": {
-        "id": "135",
-        "name": "Minnesota Golden Gophers",
-        "abbreviation": "MINN",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/135.png",
-        "score": 0
-      },
-      "away": {
-        "id": "2294",
-        "name": "Iowa Hawkeyes",
-        "abbreviation": "IOWA",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
-        "score": 0
-      },
-      "kickoff": "2026-10-24T04:00Z",
-      "status": "Scheduled",
-      "completed": false,
-      "neutral": false,
-      "prediction": {
-        "home_margin": -3.2,
-        "home_spread": 3.2,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
-        "calibrated": false
-      }
-    },
-    {
       "id": "401856836",
       "home": {
         "id": "197",
@@ -1848,126 +1758,6 @@
         "home_spread": 3.1,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
-        "calibrated": false
-      }
-    },
-    {
-      "id": "401856838",
-      "home": {
-        "id": "12",
-        "name": "Arizona Wildcats",
-        "abbreviation": "ARIZ",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png",
-        "score": 0
-      },
-      "away": {
-        "id": "66",
-        "name": "Iowa State Cyclones",
-        "abbreviation": "ISU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png",
-        "score": 0
-      },
-      "kickoff": "2026-10-24T04:00Z",
-      "status": "Scheduled",
-      "completed": false,
-      "neutral": false,
-      "prediction": {
-        "home_margin": 7.0,
-        "home_spread": -7.0,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
-        "calibrated": false
-      }
-    },
-    {
-      "id": "401856839",
-      "home": {
-        "id": "9",
-        "name": "Arizona State Sun Devils",
-        "abbreviation": "ASU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/9.png",
-        "score": 0
-      },
-      "away": {
-        "id": "2306",
-        "name": "Kansas State Wildcats",
-        "abbreviation": "KSU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2306.png",
-        "score": 0
-      },
-      "kickoff": "2026-10-24T04:00Z",
-      "status": "Scheduled",
-      "completed": false,
-      "neutral": false,
-      "prediction": {
-        "home_margin": -2.5,
-        "home_spread": 2.5,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
-        "calibrated": false
-      }
-    },
-    {
-      "id": "401858276",
-      "home": {
-        "id": "228",
-        "name": "Clemson Tigers",
-        "abbreviation": "CLEM",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/228.png",
-        "score": 0
-      },
-      "away": {
-        "id": "259",
-        "name": "Virginia Tech Hokies",
-        "abbreviation": "VT",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/259.png",
-        "score": 0
-      },
-      "kickoff": "2026-10-24T04:00Z",
-      "status": "Scheduled",
-      "completed": false,
-      "neutral": false,
-      "prediction": {
-        "home_margin": -3.1,
-        "home_spread": 3.1,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
-        "calibrated": false
-      }
-    },
-    {
-      "id": "401858495",
-      "home": {
-        "id": "356",
-        "name": "Illinois Fighting Illini",
-        "abbreviation": "ILL",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png",
-        "score": 0
-      },
-      "away": {
-        "id": "2483",
-        "name": "Oregon Ducks",
-        "abbreviation": "ORE",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
-        "score": 0
-      },
-      "kickoff": "2026-10-24T04:00Z",
-      "status": "Scheduled",
-      "completed": false,
-      "neutral": false,
-      "prediction": {
-        "home_margin": -1.8,
-        "home_spread": 1.8,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
         "games_away": 5,
         "trained_through_week": 6,
         "calibrated": false
@@ -2274,6 +2064,36 @@
       }
     },
     {
+      "id": "401858495",
+      "home": {
+        "id": "356",
+        "name": "Illinois Fighting Illini",
+        "abbreviation": "ILL",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png",
+        "score": 0
+      },
+      "away": {
+        "id": "2483",
+        "name": "Oregon Ducks",
+        "abbreviation": "ORE",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
+        "score": 0
+      },
+      "kickoff": "2026-10-24T19:00Z",
+      "status": "Scheduled",
+      "completed": false,
+      "neutral": false,
+      "prediction": {
+        "home_margin": -1.8,
+        "home_spread": 1.8,
+        "model": "Experimental opponent-adjusted ridge ratings",
+        "games_home": 6,
+        "games_away": 5,
+        "trained_through_week": 6,
+        "calibrated": false
+      }
+    },
+    {
       "id": "401856727",
       "home": {
         "id": "333",
@@ -2298,6 +2118,36 @@
         "home_spread": -15.2,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 6,
+        "calibrated": false
+      }
+    },
+    {
+      "id": "401858499",
+      "home": {
+        "id": "26",
+        "name": "UCLA Bruins",
+        "abbreviation": "UCLA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png",
+        "score": 0
+      },
+      "away": {
+        "id": "127",
+        "name": "Michigan State Spartans",
+        "abbreviation": "MSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
+        "score": 0
+      },
+      "kickoff": "2026-10-24T19:30Z",
+      "status": "Scheduled",
+      "completed": false,
+      "neutral": false,
+      "prediction": {
+        "home_margin": 12.7,
+        "home_spread": -12.7,
+        "model": "Experimental opponent-adjusted ridge ratings",
+        "games_home": 5,
         "games_away": 6,
         "trained_through_week": 6,
         "calibrated": false
@@ -2359,6 +2209,36 @@
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 5,
         "games_away": 5,
+        "trained_through_week": 6,
+        "calibrated": false
+      }
+    },
+    {
+      "id": "401858497",
+      "home": {
+        "id": "135",
+        "name": "Minnesota Golden Gophers",
+        "abbreviation": "MINN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/135.png",
+        "score": 0
+      },
+      "away": {
+        "id": "2294",
+        "name": "Iowa Hawkeyes",
+        "abbreviation": "IOWA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
+        "score": 0
+      },
+      "kickoff": "2026-10-24T19:30Z",
+      "status": "Scheduled",
+      "completed": false,
+      "neutral": false,
+      "prediction": {
+        "home_margin": -3.2,
+        "home_spread": 3.2,
+        "model": "Experimental opponent-adjusted ridge ratings",
+        "games_home": 6,
+        "games_away": 6,
         "trained_through_week": 6,
         "calibrated": false
       }
@@ -2509,6 +2389,36 @@
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
         "games_away": 6,
+        "trained_through_week": 6,
+        "calibrated": false
+      }
+    },
+    {
+      "id": "401856839",
+      "home": {
+        "id": "9",
+        "name": "Arizona State Sun Devils",
+        "abbreviation": "ASU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/9.png",
+        "score": 0
+      },
+      "away": {
+        "id": "2306",
+        "name": "Kansas State Wildcats",
+        "abbreviation": "KSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2306.png",
+        "score": 0
+      },
+      "kickoff": "2026-10-24T19:45Z",
+      "status": "Scheduled",
+      "completed": false,
+      "neutral": false,
+      "prediction": {
+        "home_margin": -2.5,
+        "home_spread": 2.5,
+        "model": "Experimental opponent-adjusted ridge ratings",
+        "games_home": 5,
+        "games_away": 5,
         "trained_through_week": 6,
         "calibrated": false
       }
@@ -2724,6 +2634,36 @@
       }
     },
     {
+      "id": "401858276",
+      "home": {
+        "id": "228",
+        "name": "Clemson Tigers",
+        "abbreviation": "CLEM",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/228.png",
+        "score": 0
+      },
+      "away": {
+        "id": "259",
+        "name": "Virginia Tech Hokies",
+        "abbreviation": "VT",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/259.png",
+        "score": 0
+      },
+      "kickoff": "2026-10-24T23:00Z",
+      "status": "Scheduled",
+      "completed": false,
+      "neutral": false,
+      "prediction": {
+        "home_margin": -3.1,
+        "home_spread": 3.1,
+        "model": "Experimental opponent-adjusted ridge ratings",
+        "games_home": 5,
+        "games_away": 6,
+        "trained_through_week": 6,
+        "calibrated": false
+      }
+    },
+    {
       "id": "401869935",
       "home": {
         "id": "2032",
@@ -2844,6 +2784,36 @@
       }
     },
     {
+      "id": "401856838",
+      "home": {
+        "id": "12",
+        "name": "Arizona Wildcats",
+        "abbreviation": "ARIZ",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png",
+        "score": 0
+      },
+      "away": {
+        "id": "66",
+        "name": "Iowa State Cyclones",
+        "abbreviation": "ISU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png",
+        "score": 0
+      },
+      "kickoff": "2026-10-24T23:30Z",
+      "status": "Scheduled",
+      "completed": false,
+      "neutral": false,
+      "prediction": {
+        "home_margin": 7.0,
+        "home_spread": -7.0,
+        "model": "Experimental opponent-adjusted ridge ratings",
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 6,
+        "calibrated": false
+      }
+    },
+    {
       "id": "401858275",
       "home": {
         "id": "153",
@@ -2956,6 +2926,36 @@
       "prediction": {
         "home_margin": 2.7,
         "home_spread": -2.7,
+        "model": "Experimental opponent-adjusted ridge ratings",
+        "games_home": 5,
+        "games_away": 6,
+        "trained_through_week": 6,
+        "calibrated": false
+      }
+    },
+    {
+      "id": "401856837",
+      "home": {
+        "id": "254",
+        "name": "Utah Utes",
+        "abbreviation": "UTAH",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
+        "score": 0
+      },
+      "away": {
+        "id": "248",
+        "name": "Houston Cougars",
+        "abbreviation": "HOU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
+        "score": 0
+      },
+      "kickoff": "2026-10-25T02:15Z",
+      "status": "Scheduled",
+      "completed": false,
+      "neutral": false,
+      "prediction": {
+        "home_margin": 4.5,
+        "home_spread": -4.5,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 5,
         "games_away": 6,
