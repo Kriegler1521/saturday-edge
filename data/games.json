@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T00:57:48.173986+00:00",
+  "updated_at": "2026-10-19T03:49:09.949650+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -3133,6 +3133,36 @@
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
         "games_away": 5,
+        "trained_through_week": 6,
+        "calibrated": false
+      }
+    },
+    {
+      "id": "401866451",
+      "home": {
+        "id": "16",
+        "name": "Sacramento State Hornets",
+        "abbreviation": "SAC",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/16.png",
+        "score": 0
+      },
+      "away": {
+        "id": "2309",
+        "name": "Kent State Golden Flashes",
+        "abbreviation": "KENT",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2309.png",
+        "score": 0
+      },
+      "kickoff": "2026-10-31T02:30Z",
+      "status": "Scheduled",
+      "completed": false,
+      "neutral": false,
+      "prediction": {
+        "home_margin": -0.5,
+        "home_spread": 0.5,
+        "model": "Experimental opponent-adjusted ridge ratings",
+        "games_home": 6,
+        "games_away": 6,
         "trained_through_week": 6,
         "calibrated": false
       }
