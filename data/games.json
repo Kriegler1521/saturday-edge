@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T21:41:31.630357+00:00",
+  "updated_at": "2026-10-19T00:57:48.173986+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -7,72 +7,6 @@
   "training_cutoff": "Before current week",
   "active_week": 7,
   "games": [
-    {
-      "id": "401862800",
-      "home": {
-        "id": "5",
-        "name": "UAB Blazers",
-        "abbreviation": "UAB",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/5.png",
-        "score": 30
-      },
-      "away": {
-        "id": "151",
-        "name": "East Carolina Pirates",
-        "abbreviation": "ECU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/151.png",
-        "score": 17
-      },
-      "kickoff": "2026-10-15T23:30Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401869950",
-      "home": {
-        "id": "295",
-        "name": "Old Dominion Monarchs",
-        "abbreviation": "ODU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/295.png",
-        "score": 15
-      },
-      "away": {
-        "id": "290",
-        "name": "Georgia Southern Eagles",
-        "abbreviation": "GASO",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/290.png",
-        "score": 23
-      },
-      "kickoff": "2026-10-15T23:30Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401860923",
-      "home": {
-        "id": "326",
-        "name": "Texas State Bobcats",
-        "abbreviation": "TXST",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/326.png",
-        "score": 66
-      },
-      "away": {
-        "id": "36",
-        "name": "Colorado State Rams",
-        "abbreviation": "CSU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/36.png",
-        "score": 27
-      },
-      "kickoff": "2026-10-16T00:00Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
     {
       "id": "401862801",
       "home": {
@@ -3136,6 +3070,66 @@
       "prediction": {
         "home_margin": 11.0,
         "home_spread": -11.0,
+        "model": "Experimental opponent-adjusted ridge ratings",
+        "games_home": 6,
+        "games_away": 5,
+        "trained_through_week": 6,
+        "calibrated": false
+      }
+    },
+    {
+      "id": "401862813",
+      "home": {
+        "id": "2429",
+        "name": "Charlotte 49ers",
+        "abbreviation": "CLT",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2429.png",
+        "score": 0
+      },
+      "away": {
+        "id": "2655",
+        "name": "Tulane Green Wave",
+        "abbreviation": "TULN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2655.png",
+        "score": 0
+      },
+      "kickoff": "2026-10-30T23:00Z",
+      "status": "Scheduled",
+      "completed": false,
+      "neutral": false,
+      "prediction": {
+        "home_margin": -8.0,
+        "home_spread": 8.0,
+        "model": "Experimental opponent-adjusted ridge ratings",
+        "games_home": 6,
+        "games_away": 5,
+        "trained_through_week": 6,
+        "calibrated": false
+      }
+    },
+    {
+      "id": "401856844",
+      "home": {
+        "id": "2116",
+        "name": "UCF Knights",
+        "abbreviation": "UCF",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png",
+        "score": 0
+      },
+      "away": {
+        "id": "239",
+        "name": "Baylor Bears",
+        "abbreviation": "BAY",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png",
+        "score": 0
+      },
+      "kickoff": "2026-10-30T23:30Z",
+      "status": "Scheduled",
+      "completed": false,
+      "neutral": false,
+      "prediction": {
+        "home_margin": -1.1,
+        "home_spread": 1.1,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
         "games_away": 5,
