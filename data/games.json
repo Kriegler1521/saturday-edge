@@ -1,342 +1,12 @@
 {
-  "updated_at": "2026-10-20T21:45:38.840454+00:00",
+  "updated_at": "2026-10-21T00:58:08.186420+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
-  "training_games": 448,
+  "training_games": 510,
   "training_cutoff": "Before current week",
-  "active_week": 7,
+  "active_week": 8,
   "games": [
-    {
-      "id": "401860903",
-      "home": {
-        "id": "204",
-        "name": "Oregon State Beavers",
-        "abbreviation": "ORST",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/204.png",
-        "score": 48
-      },
-      "away": {
-        "id": "265",
-        "name": "Washington State Cougars",
-        "abbreviation": "WSU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/265.png",
-        "score": 30
-      },
-      "kickoff": "2026-10-17T22:00Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401858263",
-      "home": {
-        "id": "2390",
-        "name": "Miami Hurricanes",
-        "abbreviation": "MIA",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
-        "score": 43
-      },
-      "away": {
-        "id": "52",
-        "name": "Florida State Seminoles",
-        "abbreviation": "FSU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png",
-        "score": 35
-      },
-      "kickoff": "2026-10-17T23:00Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401856726",
-      "home": {
-        "id": "238",
-        "name": "Vanderbilt Commodores",
-        "abbreviation": "VAN",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png",
-        "score": 21
-      },
-      "away": {
-        "id": "8",
-        "name": "Arkansas Razorbacks",
-        "abbreviation": "ARK",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png",
-        "score": 31
-      },
-      "kickoff": "2026-10-17T23:00Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401856832",
-      "home": {
-        "id": "239",
-        "name": "Baylor Bears",
-        "abbreviation": "BAY",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png",
-        "score": 6
-      },
-      "away": {
-        "id": "2628",
-        "name": "TCU Horned Frogs",
-        "abbreviation": "TCU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2628.png",
-        "score": 17
-      },
-      "kickoff": "2026-10-17T23:00Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401862806",
-      "home": {
-        "id": "58",
-        "name": "South Florida Bulls",
-        "abbreviation": "USF",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/58.png",
-        "score": 29
-      },
-      "away": {
-        "id": "2309",
-        "name": "Kent State Golden Flashes",
-        "abbreviation": "KENT",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2309.png",
-        "score": 2
-      },
-      "kickoff": "2026-10-17T23:00Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401864520",
-      "home": {
-        "id": "2449",
-        "name": "North Dakota State Bison",
-        "abbreviation": "NDSU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2449.png",
-        "score": 31
-      },
-      "away": {
-        "id": "2440",
-        "name": "Nevada Wolf Pack",
-        "abbreviation": "NEV",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2440.png",
-        "score": 17
-      },
-      "kickoff": "2026-10-17T23:00Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401869934",
-      "home": {
-        "id": "2572",
-        "name": "Southern Miss Golden Eagles",
-        "abbreviation": "USM",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2572.png",
-        "score": 13
-      },
-      "away": {
-        "id": "2032",
-        "name": "Arkansas State Red Wolves",
-        "abbreviation": "ARST",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2032.png",
-        "score": 23
-      },
-      "kickoff": "2026-10-17T23:00Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401856809",
-      "home": {
-        "id": "252",
-        "name": "BYU Cougars",
-        "abbreviation": "BYU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
-        "score": 28
-      },
-      "away": {
-        "id": "87",
-        "name": "Notre Dame Fighting Irish",
-        "abbreviation": "ND",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
-        "score": 24
-      },
-      "kickoff": "2026-10-17T23:30Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401858494",
-      "home": {
-        "id": "26",
-        "name": "UCLA Bruins",
-        "abbreviation": "UCLA",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png",
-        "score": 17
-      },
-      "away": {
-        "id": "275",
-        "name": "Wisconsin Badgers",
-        "abbreviation": "WIS",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/275.png",
-        "score": 7
-      },
-      "kickoff": "2026-10-17T23:30Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401856722",
-      "home": {
-        "id": "201",
-        "name": "Oklahoma Sooners",
-        "abbreviation": "OU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png",
-        "score": 13
-      },
-      "away": {
-        "id": "96",
-        "name": "Kentucky Wildcats",
-        "abbreviation": "UK",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png",
-        "score": 21
-      },
-      "kickoff": "2026-10-17T23:30Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401856831",
-      "home": {
-        "id": "248",
-        "name": "Houston Cougars",
-        "abbreviation": "HOU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
-        "score": 35
-      },
-      "away": {
-        "id": "197",
-        "name": "Oklahoma State Cowboys",
-        "abbreviation": "OKST",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png",
-        "score": 32
-      },
-      "kickoff": "2026-10-17T23:30Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401858262",
-      "home": {
-        "id": "24",
-        "name": "Stanford Cardinal",
-        "abbreviation": "STAN",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/24.png",
-        "score": 34
-      },
-      "away": {
-        "id": "2210",
-        "name": "Elon Phoenix",
-        "abbreviation": "ELON",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2210.png",
-        "score": 7
-      },
-      "kickoff": "2026-10-17T23:30Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401858265",
-      "home": {
-        "id": "183",
-        "name": "Syracuse Orange",
-        "abbreviation": "SYR",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/183.png",
-        "score": 26
-      },
-      "away": {
-        "id": "97",
-        "name": "Louisville Cardinals",
-        "abbreviation": "LOU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
-        "score": 34
-      },
-      "kickoff": "2026-10-17T23:30Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401862804",
-      "home": {
-        "id": "2636",
-        "name": "UTSA Roadrunners",
-        "abbreviation": "UTSA",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2636.png",
-        "score": 38
-      },
-      "away": {
-        "id": "2426",
-        "name": "Navy Midshipmen",
-        "abbreviation": "NAVY",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2426.png",
-        "score": 34
-      },
-      "kickoff": "2026-10-18T00:00Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401871091",
-      "home": {
-        "id": "2433",
-        "name": "UL Monroe Warhawks",
-        "abbreviation": "ULM",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2433.png",
-        "score": 0
-      },
-      "away": {
-        "id": "2348",
-        "name": "Louisiana Tech Bulldogs",
-        "abbreviation": "LT",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2348.png",
-        "score": 24
-      },
-      "kickoff": "2026-10-18T00:00Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
     {
       "id": "401864523",
       "home": {
@@ -498,26 +168,26 @@
         "name": "Florida International Panthers",
         "abbreviation": "FIU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2229.png",
-        "score": 0
+        "score": 8
       },
       "away": {
         "id": "2393",
         "name": "Middle Tennessee Blue Raiders",
         "abbreviation": "MTSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2393.png",
-        "score": 0
+        "score": 13
       },
       "kickoff": "2026-10-20T23:00Z",
-      "status": "Scheduled",
+      "status": "Halftime",
       "completed": false,
       "neutral": false,
       "prediction": {
         "home_margin": 7.5,
         "home_spread": -7.5,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -528,26 +198,26 @@
         "name": "Delaware Blue Hens",
         "abbreviation": "DEL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/48.png",
-        "score": 0
+        "score": 24
       },
       "away": {
         "id": "2623",
         "name": "Missouri State Bears",
         "abbreviation": "MOST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2623.png",
-        "score": 0
+        "score": 28
       },
       "kickoff": "2026-10-20T23:00Z",
-      "status": "Scheduled",
+      "status": "Halftime",
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 6.1,
-        "home_spread": -6.1,
+        "home_margin": 4.9,
+        "home_spread": -4.9,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -558,26 +228,26 @@
         "name": "Marshall Thundering Herd",
         "abbreviation": "MRSH",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/276.png",
-        "score": 0
+        "score": 6
       },
       "away": {
         "id": "6",
         "name": "South Alabama Jaguars",
         "abbreviation": "USA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/6.png",
-        "score": 0
+        "score": 3
       },
       "kickoff": "2026-10-20T23:30Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -4.5,
-        "home_spread": 4.5,
+        "home_margin": -4.7,
+        "home_spread": 4.7,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
         "games_away": 6,
-        "trained_through_week": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -602,12 +272,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 1.9,
-        "home_spread": -1.9,
+        "home_margin": 0.1,
+        "home_spread": -0.1,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
+        "games_home": 6,
         "games_away": 6,
-        "trained_through_week": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -632,12 +302,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -7.3,
-        "home_spread": 7.3,
+        "home_margin": -8.8,
+        "home_spread": 8.8,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -662,12 +332,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -7.9,
-        "home_spread": 7.9,
+        "home_margin": -8.2,
+        "home_spread": 8.2,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
+        "games_home": 6,
         "games_away": 6,
-        "trained_through_week": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -692,12 +362,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 8.7,
-        "home_spread": -8.7,
+        "home_margin": 9.0,
+        "home_spread": -9.0,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -722,12 +392,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 0.3,
-        "home_spread": -0.3,
+        "home_margin": -0.1,
+        "home_spread": 0.1,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -752,12 +422,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 2.6,
-        "home_spread": -2.6,
+        "home_margin": 3.4,
+        "home_spread": -3.4,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -782,12 +452,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 1.2,
-        "home_spread": -1.2,
+        "home_margin": -0.3,
+        "home_spread": 0.3,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -812,12 +482,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -6.5,
-        "home_spread": 6.5,
+        "home_margin": -6.0,
+        "home_spread": 6.0,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -842,12 +512,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -5.1,
-        "home_spread": 5.1,
+        "home_margin": -2.8,
+        "home_spread": 2.8,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
+        "games_home": 7,
         "games_away": 6,
-        "trained_through_week": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -872,12 +542,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 9.0,
-        "home_spread": -9.0,
+        "home_margin": 10.6,
+        "home_spread": -10.6,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -902,12 +572,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -8.7,
-        "home_spread": 8.7,
+        "home_margin": -8.2,
+        "home_spread": 8.2,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -932,12 +602,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -5.5,
-        "home_spread": 5.5,
+        "home_margin": -6.5,
+        "home_spread": 6.5,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -962,12 +632,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -6.1,
-        "home_spread": 6.1,
+        "home_margin": -7.5,
+        "home_spread": 7.5,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -992,12 +662,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 6.4,
-        "home_spread": -6.4,
+        "home_margin": 9.9,
+        "home_spread": -9.9,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1022,12 +692,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 15.9,
-        "home_spread": -15.9,
+        "home_margin": 14.3,
+        "home_spread": -14.3,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1052,12 +722,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 5.6,
-        "home_spread": -5.6,
+        "home_margin": 7.4,
+        "home_spread": -7.4,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1082,12 +752,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 8.3,
-        "home_spread": -8.3,
+        "home_margin": 7.4,
+        "home_spread": -7.4,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1112,12 +782,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 0.6,
-        "home_spread": -0.6,
+        "home_margin": 2.2,
+        "home_spread": -2.2,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1145,9 +815,9 @@
         "home_margin": -3.1,
         "home_spread": 3.1,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1175,9 +845,9 @@
         "home_margin": 4.3,
         "home_spread": -4.3,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1202,12 +872,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -0.8,
-        "home_spread": 0.8,
+        "home_margin": -1.3,
+        "home_spread": 1.3,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1232,12 +902,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -1.8,
-        "home_spread": 1.8,
+        "home_margin": -2.4,
+        "home_spread": 2.4,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1262,12 +932,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -2.1,
-        "home_spread": 2.1,
+        "home_margin": -2.7,
+        "home_spread": 2.7,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1292,12 +962,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 12.7,
-        "home_spread": -12.7,
+        "home_margin": 12.6,
+        "home_spread": -12.6,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1322,12 +992,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -0.9,
-        "home_spread": 0.9,
+        "home_margin": -3.3,
+        "home_spread": 3.3,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1352,12 +1022,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 15.2,
-        "home_spread": -15.2,
+        "home_margin": 10.9,
+        "home_spread": -10.9,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1382,12 +1052,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -3.2,
-        "home_spread": 3.2,
+        "home_margin": -3.7,
+        "home_spread": 3.7,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
         "games_away": 6,
-        "trained_through_week": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1412,12 +1082,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 5.5,
-        "home_spread": -5.5,
+        "home_margin": 3.8,
+        "home_spread": -3.8,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1442,12 +1112,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 4.8,
-        "home_spread": -4.8,
+        "home_margin": 3.6,
+        "home_spread": -3.6,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1472,12 +1142,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -0.9,
-        "home_spread": 0.9,
+        "home_margin": -1.4,
+        "home_spread": 1.4,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
+        "games_home": 6,
         "games_away": 6,
-        "trained_through_week": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1502,12 +1172,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 1.1,
-        "home_spread": -1.1,
+        "home_margin": -0.6,
+        "home_spread": 0.6,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1532,12 +1202,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 3.5,
-        "home_spread": -3.5,
+        "home_margin": 6.9,
+        "home_spread": -6.9,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1562,12 +1232,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 4.2,
-        "home_spread": -4.2,
+        "home_margin": 5.9,
+        "home_spread": -5.9,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1592,12 +1262,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -2.5,
-        "home_spread": 2.5,
+        "home_margin": -4.6,
+        "home_spread": 4.6,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1622,12 +1292,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 6.1,
-        "home_spread": -6.1,
+        "home_margin": 10.0,
+        "home_spread": -10.0,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 7,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 8,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1652,12 +1322,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 13.1,
-        "home_spread": -13.1,
+        "home_margin": 12.4,
+        "home_spread": -12.4,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1682,12 +1352,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 6.2,
-        "home_spread": -6.2,
+        "home_margin": 5.4,
+        "home_spread": -5.4,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1712,12 +1382,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -6.6,
-        "home_spread": 6.6,
+        "home_margin": -9.7,
+        "home_spread": 9.7,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1742,12 +1412,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 7.5,
-        "home_spread": -7.5,
+        "home_margin": 10.3,
+        "home_spread": -10.3,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1772,12 +1442,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -10.1,
-        "home_spread": 10.1,
+        "home_margin": -10.0,
+        "home_spread": 10.0,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
+        "games_home": 7,
         "games_away": 6,
-        "trained_through_week": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1802,12 +1472,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 5.7,
-        "home_spread": -5.7,
+        "home_margin": 1.7,
+        "home_spread": -1.7,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1832,12 +1502,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 10.5,
-        "home_spread": -10.5,
+        "home_margin": 10.3,
+        "home_spread": -10.3,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1862,12 +1532,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -3.1,
-        "home_spread": 3.1,
+        "home_margin": -0.5,
+        "home_spread": 0.5,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1892,12 +1562,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -6.4,
-        "home_spread": 6.4,
+        "home_margin": -3.1,
+        "home_spread": 3.1,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1922,12 +1592,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 4.8,
-        "home_spread": -4.8,
+        "home_margin": 1.2,
+        "home_spread": -1.2,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1952,12 +1622,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 11.6,
-        "home_spread": -11.6,
+        "home_margin": 13.1,
+        "home_spread": -13.1,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -1982,12 +1652,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 3.4,
-        "home_spread": -3.4,
+        "home_margin": 2.2,
+        "home_spread": -2.2,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
+        "games_home": 6,
         "games_away": 7,
-        "trained_through_week": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2012,12 +1682,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 7.0,
-        "home_spread": -7.0,
+        "home_margin": 7.1,
+        "home_spread": -7.1,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
         "games_away": 6,
-        "trained_through_week": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2042,12 +1712,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 4.4,
-        "home_spread": -4.4,
+        "home_margin": 6.6,
+        "home_spread": -6.6,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2072,12 +1742,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 6.9,
-        "home_spread": -6.9,
+        "home_margin": 10.2,
+        "home_spread": -10.2,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
+        "games_home": 6,
         "games_away": 6,
-        "trained_through_week": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2102,12 +1772,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -2.4,
-        "home_spread": 2.4,
+        "home_margin": -0.1,
+        "home_spread": 0.1,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2132,12 +1802,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 2.7,
-        "home_spread": -2.7,
+        "home_margin": 2.1,
+        "home_spread": -2.1,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2162,12 +1832,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 4.5,
-        "home_spread": -4.5,
+        "home_margin": 3.7,
+        "home_spread": -3.7,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2192,12 +1862,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -1.2,
-        "home_spread": 1.2,
+        "home_margin": 0.4,
+        "home_spread": -0.4,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2222,12 +1892,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 0.0,
-        "home_spread": -0.0,
+        "home_margin": 2.6,
+        "home_spread": -2.6,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2252,12 +1922,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 1.6,
-        "home_spread": -1.6,
+        "home_margin": 1.8,
+        "home_spread": -1.8,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2282,12 +1952,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -2.3,
-        "home_spread": 2.3,
+        "home_margin": -2.4,
+        "home_spread": 2.4,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2312,12 +1982,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 4.8,
-        "home_spread": -4.8,
+        "home_margin": 8.2,
+        "home_spread": -8.2,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2342,12 +2012,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 11.0,
-        "home_spread": -11.0,
+        "home_margin": 15.5,
+        "home_spread": -15.5,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2372,12 +2042,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -8.0,
-        "home_spread": 8.0,
+        "home_margin": -8.3,
+        "home_spread": 8.3,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2402,12 +2072,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -1.1,
-        "home_spread": 1.1,
+        "home_margin": 0.1,
+        "home_spread": -0.1,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2432,12 +2102,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -0.5,
-        "home_spread": 0.5,
+        "home_margin": -2.3,
+        "home_spread": 2.3,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2462,12 +2132,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -1.1,
-        "home_spread": 1.1,
+        "home_margin": -0.0,
+        "home_spread": 0.0,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2492,12 +2162,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 5.4,
-        "home_spread": -5.4,
+        "home_margin": 6.3,
+        "home_spread": -6.3,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2522,12 +2192,12 @@
       "completed": false,
       "neutral": true,
       "prediction": {
-        "home_margin": -14.4,
-        "home_spread": 14.4,
+        "home_margin": -13.8,
+        "home_spread": 13.8,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2552,12 +2222,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 4.2,
-        "home_spread": -4.2,
+        "home_margin": 5.4,
+        "home_spread": -5.4,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
+        "games_home": 6,
         "games_away": 6,
-        "trained_through_week": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2582,12 +2252,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 1.7,
-        "home_spread": -1.7,
+        "home_margin": 2.5,
+        "home_spread": -2.5,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2612,12 +2282,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 1.1,
-        "home_spread": -1.1,
+        "home_margin": -1.0,
+        "home_spread": 1.0,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2642,12 +2312,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 1.6,
-        "home_spread": -1.6,
+        "home_margin": 4.3,
+        "home_spread": -4.3,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2672,12 +2342,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 11.8,
-        "home_spread": -11.8,
+        "home_margin": 9.9,
+        "home_spread": -9.9,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2702,12 +2372,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -0.6,
-        "home_spread": 0.6,
+        "home_margin": -1.7,
+        "home_spread": 1.7,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
+        "games_home": 7,
         "games_away": 6,
-        "trained_through_week": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2732,12 +2402,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 9.0,
-        "home_spread": -9.0,
+        "home_margin": 9.2,
+        "home_spread": -9.2,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2762,12 +2432,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 11.0,
-        "home_spread": -11.0,
+        "home_margin": 11.7,
+        "home_spread": -11.7,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2792,12 +2462,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -3.8,
-        "home_spread": 3.8,
+        "home_margin": -2.7,
+        "home_spread": 2.7,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2822,12 +2492,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 5.4,
-        "home_spread": -5.4,
+        "home_margin": 7.2,
+        "home_spread": -7.2,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2852,12 +2522,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 3.7,
-        "home_spread": -3.7,
+        "home_margin": 2.9,
+        "home_spread": -2.9,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
+        "games_home": 7,
         "games_away": 6,
-        "trained_through_week": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2882,12 +2552,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -2.7,
-        "home_spread": 2.7,
+        "home_margin": -2.8,
+        "home_spread": 2.8,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2912,12 +2582,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 10.7,
-        "home_spread": -10.7,
+        "home_margin": 8.8,
+        "home_spread": -8.8,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2942,12 +2612,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 3.8,
-        "home_spread": -3.8,
+        "home_margin": 4.4,
+        "home_spread": -4.4,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
+        "games_home": 6,
         "games_away": 6,
-        "trained_through_week": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -2972,12 +2642,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 4.0,
-        "home_spread": -4.0,
+        "home_margin": 3.6,
+        "home_spread": -3.6,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3002,12 +2672,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 3.3,
-        "home_spread": -3.3,
+        "home_margin": 1.5,
+        "home_spread": -1.5,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3032,12 +2702,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 17.3,
-        "home_spread": -17.3,
+        "home_margin": 15.9,
+        "home_spread": -15.9,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3062,12 +2732,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 13.8,
-        "home_spread": -13.8,
+        "home_margin": 15.6,
+        "home_spread": -15.6,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3092,12 +2762,12 @@
       "completed": false,
       "neutral": true,
       "prediction": {
-        "home_margin": 8.2,
-        "home_spread": -8.2,
+        "home_margin": 6.1,
+        "home_spread": -6.1,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3122,12 +2792,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 15.6,
-        "home_spread": -15.6,
+        "home_margin": 15.5,
+        "home_spread": -15.5,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
+        "games_home": 7,
         "games_away": 6,
-        "trained_through_week": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3152,12 +2822,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 3.6,
-        "home_spread": -3.6,
+        "home_margin": 6.8,
+        "home_spread": -6.8,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3182,12 +2852,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -0.5,
-        "home_spread": 0.5,
+        "home_margin": 2.0,
+        "home_spread": -2.0,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3212,12 +2882,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 21.8,
-        "home_spread": -21.8,
+        "home_margin": 22.7,
+        "home_spread": -22.7,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3242,12 +2912,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 8.8,
-        "home_spread": -8.8,
+        "home_margin": 8.9,
+        "home_spread": -8.9,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3272,12 +2942,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -1.1,
-        "home_spread": 1.1,
+        "home_margin": -2.3,
+        "home_spread": 2.3,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3302,12 +2972,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -7.6,
-        "home_spread": 7.6,
+        "home_margin": -6.6,
+        "home_spread": 6.6,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3332,12 +3002,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 5.9,
-        "home_spread": -5.9,
+        "home_margin": 9.2,
+        "home_spread": -9.2,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3362,12 +3032,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -9.3,
-        "home_spread": 9.3,
+        "home_margin": -8.3,
+        "home_spread": 8.3,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3392,12 +3062,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 11.9,
-        "home_spread": -11.9,
+        "home_margin": 12.3,
+        "home_spread": -12.3,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3422,12 +3092,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -0.1,
-        "home_spread": 0.1,
+        "home_margin": -0.6,
+        "home_spread": 0.6,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
+        "games_home": 6,
         "games_away": 6,
-        "trained_through_week": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3452,12 +3122,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 4.3,
-        "home_spread": -4.3,
+        "home_margin": 4.2,
+        "home_spread": -4.2,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3482,12 +3152,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 0.7,
-        "home_spread": -0.7,
+        "home_margin": -0.0,
+        "home_spread": 0.0,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3512,12 +3182,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 7.3,
-        "home_spread": -7.3,
+        "home_margin": 5.2,
+        "home_spread": -5.2,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3542,12 +3212,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 2.5,
-        "home_spread": -2.5,
+        "home_margin": 3.8,
+        "home_spread": -3.8,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3572,12 +3242,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -8.0,
-        "home_spread": 8.0,
+        "home_margin": -7.3,
+        "home_spread": 7.3,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3602,12 +3272,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -3.6,
-        "home_spread": 3.6,
+        "home_margin": -3.7,
+        "home_spread": 3.7,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 7,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3632,12 +3302,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 4.8,
-        "home_spread": -4.8,
+        "home_margin": 7.3,
+        "home_spread": -7.3,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 5,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3662,12 +3332,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 11.7,
-        "home_spread": -11.7,
+        "home_margin": 10.1,
+        "home_spread": -10.1,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3692,12 +3362,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -10.7,
-        "home_spread": 10.7,
+        "home_margin": -6.5,
+        "home_spread": 6.5,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3722,12 +3392,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 13.7,
-        "home_spread": -13.7,
+        "home_margin": 11.8,
+        "home_spread": -11.8,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3752,12 +3422,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 6.9,
-        "home_spread": -6.9,
+        "home_margin": 2.4,
+        "home_spread": -2.4,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3782,12 +3452,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 10.6,
-        "home_spread": -10.6,
+        "home_margin": 7.4,
+        "home_spread": -7.4,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3812,12 +3482,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": 13.2,
-        "home_spread": -13.2,
+        "home_margin": 13.7,
+        "home_spread": -13.7,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 5,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 6,
+        "trained_through_week": 7,
         "calibrated": false
       }
     },
@@ -3842,12 +3512,12 @@
       "completed": false,
       "neutral": false,
       "prediction": {
-        "home_margin": -3.9,
-        "home_spread": 3.9,
+        "home_margin": -4.9,
+        "home_spread": 4.9,
         "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 6,
-        "trained_through_week": 6,
+        "games_home": 7,
+        "games_away": 7,
+        "trained_through_week": 7,
         "calibrated": false
       }
     }
