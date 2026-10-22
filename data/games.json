@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T21:47:42.512869+00:00",
+  "updated_at": "2026-10-22T00:57:33.638198+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -80,7 +80,7 @@
         "name": "Sam Houston Bearkats",
         "abbreviation": "SHSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2534.png",
-        "score": 0
+        "score": 7
       },
       "away": {
         "id": "166",
@@ -90,7 +90,7 @@
         "score": 0
       },
       "kickoff": "2026-10-22T00:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
