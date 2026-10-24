@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T03:46:04.692667+00:00",
+  "updated_at": "2026-10-24T06:55:02.292310+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -153,21 +153,13 @@
         "name": "Army Black Knights",
         "abbreviation": "ARMY",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/349.png",
-        "score": 28
+        "score": 38
       },
       "kickoff": "2026-10-24T00:30Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": -0.3,
-        "home_spread": 0.3,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 7,
-        "games_away": 6,
-        "trained_through_week": 7,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401864525",
@@ -176,7 +168,7 @@
         "name": "Wyoming Cowboys",
         "abbreviation": "WYO",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2751.png",
-        "score": 21
+        "score": 28
       },
       "away": {
         "id": "2005",
@@ -186,18 +178,10 @@
         "score": 14
       },
       "kickoff": "2026-10-24T01:00Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": -6.0,
-        "home_spread": 6.0,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 7,
-        "games_away": 6,
-        "trained_through_week": 7,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401858272",
@@ -206,28 +190,20 @@
         "name": "Stanford Cardinal",
         "abbreviation": "STAN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/24.png",
-        "score": 14
+        "score": 31
       },
       "away": {
         "id": "152",
         "name": "NC State Wolfpack",
         "abbreviation": "NCSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/152.png",
-        "score": 14
+        "score": 28
       },
       "kickoff": "2026-10-24T02:30Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": -2.8,
-        "home_spread": 2.8,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 7,
-        "games_away": 6,
-        "trained_through_week": 7,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401858274",
