@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T15:43:47.415046+00:00",
+  "updated_at": "2026-10-24T18:46:10.109814+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -212,17 +212,17 @@
         "name": "Miami Hurricanes",
         "abbreviation": "MIA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
-        "score": 0
+        "score": 45
       },
       "away": {
         "id": "221",
         "name": "Pittsburgh Panthers",
         "abbreviation": "PITT",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/221.png",
-        "score": 0
+        "score": 14
       },
       "kickoff": "2026-10-24T16:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -242,17 +242,17 @@
         "name": "Michigan Wolverines",
         "abbreviation": "MICH",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png",
-        "score": 0
+        "score": 3
       },
       "away": {
         "id": "84",
         "name": "Indiana Hoosiers",
         "abbreviation": "IU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/84.png",
-        "score": 0
+        "score": 6
       },
       "kickoff": "2026-10-24T16:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -272,17 +272,17 @@
         "name": "Cincinnati Bearcats",
         "abbreviation": "CIN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2132.png",
-        "score": 0
+        "score": 30
       },
       "away": {
         "id": "2641",
         "name": "Texas Tech Red Raiders",
         "abbreviation": "TTU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
-        "score": 0
+        "score": 15
       },
       "kickoff": "2026-10-24T16:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -302,17 +302,17 @@
         "name": "Auburn Tigers",
         "abbreviation": "AUB",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png",
-        "score": 0
+        "score": 10
       },
       "away": {
         "id": "99",
         "name": "LSU Tigers",
         "abbreviation": "LSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png",
-        "score": 0
+        "score": 31
       },
       "kickoff": "2026-10-24T16:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -332,17 +332,17 @@
         "name": "SMU Mustangs",
         "abbreviation": "SMU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2567.png",
-        "score": 0
+        "score": 38
       },
       "away": {
         "id": "25",
         "name": "California Golden Bears",
         "abbreviation": "CAL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/25.png",
-        "score": 0
+        "score": 20
       },
       "kickoff": "2026-10-24T16:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -362,17 +362,17 @@
         "name": "Northwestern Wildcats",
         "abbreviation": "NU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png",
-        "score": 0
+        "score": 28
       },
       "away": {
         "id": "164",
         "name": "Rutgers Scarlet Knights",
         "abbreviation": "RUTG",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/164.png",
-        "score": 0
+        "score": 14
       },
       "kickoff": "2026-10-24T16:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -392,17 +392,17 @@
         "name": "TCU Horned Frogs",
         "abbreviation": "TCU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2628.png",
-        "score": 0
+        "score": 20
       },
       "away": {
         "id": "277",
         "name": "West Virginia Mountaineers",
         "abbreviation": "WVU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/277.png",
-        "score": 0
+        "score": 24
       },
       "kickoff": "2026-10-24T16:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -422,17 +422,17 @@
         "name": "Florida Atlantic Owls",
         "abbreviation": "FAU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2226.png",
-        "score": 0
+        "score": 44
       },
       "away": {
         "id": "242",
         "name": "Rice Owls",
         "abbreviation": "RICE",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/242.png",
-        "score": 0
+        "score": 42
       },
       "kickoff": "2026-10-24T16:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -452,17 +452,17 @@
         "name": "Toledo Rockets",
         "abbreviation": "TOL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2649.png",
-        "score": 0
+        "score": 38
       },
       "away": {
         "id": "2711",
         "name": "Western Michigan Broncos",
         "abbreviation": "WMU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2711.png",
-        "score": 0
+        "score": 35
       },
       "kickoff": "2026-10-24T16:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -482,17 +482,17 @@
         "name": "Kansas Jayhawks",
         "abbreviation": "KU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png",
-        "score": 0
+        "score": 7
       },
       "away": {
         "id": "239",
         "name": "Baylor Bears",
         "abbreviation": "BAY",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png",
-        "score": 0
+        "score": 7
       },
       "kickoff": "2026-10-24T17:00Z",
-      "status": "Scheduled",
+      "status": "Halftime",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -512,17 +512,17 @@
         "name": "Kent State Golden Flashes",
         "abbreviation": "KENT",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2309.png",
-        "score": 0
+        "score": 7
       },
       "away": {
         "id": "2006",
         "name": "Akron Zips",
         "abbreviation": "AKR",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2006.png",
-        "score": 0
+        "score": 7
       },
       "kickoff": "2026-10-24T17:00Z",
-      "status": "Scheduled",
+      "status": "Halftime",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -542,17 +542,17 @@
         "name": "Central Michigan Chippewas",
         "abbreviation": "CMU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2117.png",
-        "score": 0
+        "score": 10
       },
       "away": {
         "id": "193",
         "name": "Miami (OH) RedHawks",
         "abbreviation": "M-OH",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/193.png",
-        "score": 0
+        "score": 14
       },
       "kickoff": "2026-10-24T17:00Z",
-      "status": "Scheduled",
+      "status": "Halftime",
       "completed": false,
       "neutral": false,
       "prediction": {
