@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T21:44:44.215404+00:00",
+  "updated_at": "2026-10-24T01:02:48.851326+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -7,72 +7,6 @@
   "training_cutoff": "Before current week",
   "active_week": 8,
   "games": [
-    {
-      "id": "401871055",
-      "home": {
-        "id": "2229",
-        "name": "Florida International Panthers",
-        "abbreviation": "FIU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2229.png",
-        "score": 23
-      },
-      "away": {
-        "id": "2393",
-        "name": "Middle Tennessee Blue Raiders",
-        "abbreviation": "MTSU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2393.png",
-        "score": 26
-      },
-      "kickoff": "2026-10-20T23:00Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401871069",
-      "home": {
-        "id": "48",
-        "name": "Delaware Blue Hens",
-        "abbreviation": "DEL",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/48.png",
-        "score": 61
-      },
-      "away": {
-        "id": "2623",
-        "name": "Missouri State Bears",
-        "abbreviation": "MOST",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2623.png",
-        "score": 38
-      },
-      "kickoff": "2026-10-20T23:00Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401871092",
-      "home": {
-        "id": "276",
-        "name": "Marshall Thundering Herd",
-        "abbreviation": "MRSH",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/276.png",
-        "score": 20
-      },
-      "away": {
-        "id": "6",
-        "name": "South Alabama Jaguars",
-        "abbreviation": "USA",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/6.png",
-        "score": 13
-      },
-      "kickoff": "2026-10-20T23:30Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
     {
       "id": "401871070",
       "home": {
@@ -168,17 +102,17 @@
         "name": "Virginia Cavaliers",
         "abbreviation": "UVA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/258.png",
-        "score": 0
+        "score": 13
       },
       "away": {
         "id": "150",
         "name": "Duke Blue Devils",
         "abbreviation": "DUKE",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png",
-        "score": 0
+        "score": 10
       },
       "kickoff": "2026-10-23T23:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -198,17 +132,17 @@
         "name": "UConn Huskies",
         "abbreviation": "CONN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/41.png",
-        "score": 0
+        "score": 21
       },
       "away": {
         "id": "113",
         "name": "Massachusetts Minutemen",
         "abbreviation": "MASS",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/113.png",
-        "score": 0
+        "score": 3
       },
       "kickoff": "2026-10-23T23:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -228,17 +162,17 @@
         "name": "Tulsa Golden Hurricane",
         "abbreviation": "TLSA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/202.png",
-        "score": 0
+        "score": 7
       },
       "away": {
         "id": "349",
         "name": "Army Black Knights",
         "abbreviation": "ARMY",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/349.png",
-        "score": 0
+        "score": 10
       },
       "kickoff": "2026-10-24T00:30Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
