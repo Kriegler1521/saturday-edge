@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T03:46:49.454135+00:00",
+  "updated_at": "2026-10-25T06:55:42.991267+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -1114,28 +1114,20 @@
         "name": "Utah Utes",
         "abbreviation": "UTAH",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
-        "score": 0
+        "score": 21
       },
       "away": {
         "id": "248",
         "name": "Houston Cougars",
         "abbreviation": "HOU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
-        "score": 3
+        "score": 13
       },
       "kickoff": "2026-10-25T02:15Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": 3.7,
-        "home_spread": -3.7,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 7,
-        "trained_through_week": 7,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401864527",
@@ -1144,28 +1136,20 @@
         "name": "New Mexico Lobos",
         "abbreviation": "UNM",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/167.png",
-        "score": 14
+        "score": 21
       },
       "away": {
         "id": "2449",
         "name": "North Dakota State Bison",
         "abbreviation": "NDSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2449.png",
-        "score": 3
+        "score": 16
       },
       "kickoff": "2026-10-25T02:20Z",
-      "status": "Halftime",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": 2.1,
-        "home_spread": -2.1,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 6,
-        "games_away": 7,
-        "trained_through_week": 7,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401871071",
