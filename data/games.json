@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T01:08:43.482636+00:00",
+  "updated_at": "2026-10-26T03:49:35.227474+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -3061,6 +3061,66 @@
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
         "games_away": 7,
+        "trained_through_week": 7,
+        "calibrated": false
+      }
+    },
+    {
+      "id": "401864533",
+      "home": {
+        "id": "2440",
+        "name": "Nevada Wolf Pack",
+        "abbreviation": "NEV",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2440.png",
+        "score": 0
+      },
+      "away": {
+        "id": "167",
+        "name": "New Mexico Lobos",
+        "abbreviation": "UNM",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/167.png",
+        "score": 0
+      },
+      "kickoff": "2026-11-07T02:00Z",
+      "status": "Scheduled",
+      "completed": false,
+      "neutral": false,
+      "prediction": {
+        "home_margin": -5.4,
+        "home_spread": 5.4,
+        "model": "Experimental opponent-adjusted ridge ratings",
+        "games_home": 6,
+        "games_away": 6,
+        "trained_through_week": 7,
+        "calibrated": false
+      }
+    },
+    {
+      "id": "401856855",
+      "home": {
+        "id": "12",
+        "name": "Arizona Wildcats",
+        "abbreviation": "ARIZ",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png",
+        "score": 0
+      },
+      "away": {
+        "id": "2628",
+        "name": "TCU Horned Frogs",
+        "abbreviation": "TCU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2628.png",
+        "score": 0
+      },
+      "kickoff": "2026-11-07T03:15Z",
+      "status": "Scheduled",
+      "completed": false,
+      "neutral": false,
+      "prediction": {
+        "home_margin": 5.2,
+        "home_spread": -5.2,
+        "model": "Experimental opponent-adjusted ridge ratings",
+        "games_home": 6,
+        "games_away": 6,
         "trained_through_week": 7,
         "calibrated": false
       }
