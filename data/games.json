@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T01:01:36.938074+00:00",
+  "updated_at": "2026-10-27T03:48:08.906153+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -7,28 +7,6 @@
   "training_cutoff": "Before current week",
   "active_week": 8,
   "games": [
-    {
-      "id": "401858272",
-      "home": {
-        "id": "24",
-        "name": "Stanford Cardinal",
-        "abbreviation": "STAN",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/24.png",
-        "score": 31
-      },
-      "away": {
-        "id": "152",
-        "name": "NC State Wolfpack",
-        "abbreviation": "NCSU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/152.png",
-        "score": 28
-      },
-      "kickoff": "2026-10-24T02:30Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
     {
       "id": "401858274",
       "home": {
@@ -3338,36 +3316,6 @@
       }
     },
     {
-      "id": "401864534",
-      "home": {
-        "id": "23",
-        "name": "San Jos\u00e9 State Spartans",
-        "abbreviation": "SJSU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/23.png",
-        "score": 0
-      },
-      "away": {
-        "id": "2459",
-        "name": "Northern Illinois Huskies",
-        "abbreviation": "NIU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2459.png",
-        "score": 0
-      },
-      "kickoff": "2026-11-07T05:00Z",
-      "status": "Scheduled",
-      "completed": false,
-      "neutral": false,
-      "prediction": {
-        "home_margin": 10.7,
-        "home_spread": -10.7,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 7,
-        "games_away": 6,
-        "trained_through_week": 7,
-        "calibrated": false
-      }
-    },
-    {
       "id": "401856849",
       "home": {
         "id": "254",
@@ -4020,6 +3968,36 @@
       }
     },
     {
+      "id": "401864534",
+      "home": {
+        "id": "23",
+        "name": "San Jos\u00e9 State Spartans",
+        "abbreviation": "SJSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/23.png",
+        "score": 0
+      },
+      "away": {
+        "id": "2459",
+        "name": "Northern Illinois Huskies",
+        "abbreviation": "NIU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2459.png",
+        "score": 0
+      },
+      "kickoff": "2026-11-07T21:00Z",
+      "status": "Scheduled",
+      "completed": false,
+      "neutral": false,
+      "prediction": {
+        "home_margin": 10.7,
+        "home_spread": -10.7,
+        "model": "Experimental opponent-adjusted ridge ratings",
+        "games_home": 7,
+        "games_away": 6,
+        "trained_through_week": 7,
+        "calibrated": false
+      }
+    },
+    {
       "id": "401871074",
       "home": {
         "id": "2229",
@@ -4435,6 +4413,126 @@
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 6,
         "games_away": 6,
+        "trained_through_week": 7,
+        "calibrated": false
+      }
+    },
+    {
+      "id": "401860913",
+      "home": {
+        "id": "328",
+        "name": "Utah State Aggies",
+        "abbreviation": "USU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/328.png",
+        "score": 0
+      },
+      "away": {
+        "id": "278",
+        "name": "Fresno State Bulldogs",
+        "abbreviation": "FRES",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/278.png",
+        "score": 0
+      },
+      "kickoff": "2026-11-08T02:30Z",
+      "status": "Scheduled",
+      "completed": false,
+      "neutral": false,
+      "prediction": {
+        "home_margin": -4.0,
+        "home_spread": 4.0,
+        "model": "Experimental opponent-adjusted ridge ratings",
+        "games_home": 6,
+        "games_away": 7,
+        "trained_through_week": 7,
+        "calibrated": false
+      }
+    },
+    {
+      "id": "401864532",
+      "home": {
+        "id": "2638",
+        "name": "UTEP Miners",
+        "abbreviation": "UTEP",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2638.png",
+        "score": 0
+      },
+      "away": {
+        "id": "62",
+        "name": "Hawai'i Rainbow Warriors",
+        "abbreviation": "HAW",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/62.png",
+        "score": 0
+      },
+      "kickoff": "2026-11-08T02:30Z",
+      "status": "Scheduled",
+      "completed": false,
+      "neutral": false,
+      "prediction": {
+        "home_margin": -1.5,
+        "home_spread": 1.5,
+        "model": "Experimental opponent-adjusted ridge ratings",
+        "games_home": 7,
+        "games_away": 7,
+        "trained_through_week": 7,
+        "calibrated": false
+      }
+    },
+    {
+      "id": "401860912",
+      "home": {
+        "id": "204",
+        "name": "Oregon State Beavers",
+        "abbreviation": "ORST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/204.png",
+        "score": 0
+      },
+      "away": {
+        "id": "326",
+        "name": "Texas State Bobcats",
+        "abbreviation": "TXST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/326.png",
+        "score": 0
+      },
+      "kickoff": "2026-11-08T03:30Z",
+      "status": "Scheduled",
+      "completed": false,
+      "neutral": false,
+      "prediction": {
+        "home_margin": 8.8,
+        "home_spread": -8.8,
+        "model": "Experimental opponent-adjusted ridge ratings",
+        "games_home": 7,
+        "games_away": 6,
+        "trained_through_week": 7,
+        "calibrated": false
+      }
+    },
+    {
+      "id": "401864535",
+      "home": {
+        "id": "2439",
+        "name": "UNLV Rebels",
+        "abbreviation": "UNLV",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2439.png",
+        "score": 0
+      },
+      "away": {
+        "id": "2751",
+        "name": "Wyoming Cowboys",
+        "abbreviation": "WYO",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2751.png",
+        "score": 0
+      },
+      "kickoff": "2026-11-08T03:30Z",
+      "status": "Scheduled",
+      "completed": false,
+      "neutral": false,
+      "prediction": {
+        "home_margin": 7.1,
+        "home_spread": -7.1,
+        "model": "Experimental opponent-adjusted ridge ratings",
+        "games_home": 7,
+        "games_away": 7,
         "trained_through_week": 7,
         "calibrated": false
       }
