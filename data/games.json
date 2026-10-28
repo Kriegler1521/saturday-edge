@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T01:12:34.907393+00:00",
+  "updated_at": "2026-10-28T03:56:02.511134+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -7,50 +7,6 @@
   "training_cutoff": "Before current week",
   "active_week": 9,
   "games": [
-    {
-      "id": "401856837",
-      "home": {
-        "id": "254",
-        "name": "Utah Utes",
-        "abbreviation": "UTAH",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
-        "score": 21
-      },
-      "away": {
-        "id": "248",
-        "name": "Houston Cougars",
-        "abbreviation": "HOU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
-        "score": 13
-      },
-      "kickoff": "2026-10-25T02:15Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401864527",
-      "home": {
-        "id": "167",
-        "name": "New Mexico Lobos",
-        "abbreviation": "UNM",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/167.png",
-        "score": 21
-      },
-      "away": {
-        "id": "2449",
-        "name": "North Dakota State Bison",
-        "abbreviation": "NDSU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2449.png",
-        "score": 16
-      },
-      "kickoff": "2026-10-25T02:20Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
     {
       "id": "401871071",
       "home": {
@@ -65,21 +21,13 @@
         "name": "Delaware Blue Hens",
         "abbreviation": "DEL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/48.png",
-        "score": 28
+        "score": 35
       },
       "kickoff": "2026-10-27T23:00Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": -1.5,
-        "home_spread": 1.5,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 7,
-        "games_away": 7,
-        "trained_through_week": 8,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401871072",
@@ -88,7 +36,7 @@
         "name": "Missouri State Bears",
         "abbreviation": "MOST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2623.png",
-        "score": 10
+        "score": 24
       },
       "away": {
         "id": "2534",
@@ -98,18 +46,10 @@
         "score": 3
       },
       "kickoff": "2026-10-28T00:00Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": 1.9,
-        "home_spread": -1.9,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 7,
-        "games_away": 7,
-        "trained_through_week": 8,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401871058",
