@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:51:53.793867+00:00",
+  "updated_at": "2026-10-29T01:11:08.320355+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -58,17 +58,17 @@
         "name": "Middle Tennessee Blue Raiders",
         "abbreviation": "MTSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2393.png",
-        "score": 0
+        "score": 17
       },
       "away": {
         "id": "338",
         "name": "Kennesaw State Owls",
         "abbreviation": "KENN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/338.png",
-        "score": 0
+        "score": 27
       },
       "kickoff": "2026-10-28T23:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -95,10 +95,10 @@
         "name": "Jacksonville State Gamecocks",
         "abbreviation": "JXST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/55.png",
-        "score": 0
+        "score": 7
       },
       "kickoff": "2026-10-29T00:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
