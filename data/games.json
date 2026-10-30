@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T01:14:03.985340+00:00",
+  "updated_at": "2026-10-30T03:58:45.172664+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -102,28 +102,20 @@
         "name": "North Texas Mean Green",
         "abbreviation": "UNT",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/249.png",
-        "score": 24
+        "score": 48
       },
       "away": {
         "id": "2226",
         "name": "Florida Atlantic Owls",
         "abbreviation": "FAU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2226.png",
-        "score": 23
+        "score": 41
       },
       "kickoff": "2026-10-29T23:30Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": 9.3,
-        "home_spread": -9.3,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 7,
-        "games_away": 7,
-        "trained_through_week": 8,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401869963",
@@ -139,21 +131,13 @@
         "name": "Troy Trojans",
         "abbreviation": "TROY",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2653.png",
-        "score": 7
+        "score": 24
       },
       "kickoff": "2026-10-29T23:30Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": 16.2,
-        "home_spread": -16.2,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 8,
-        "games_away": 7,
-        "trained_through_week": 8,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401862813",
