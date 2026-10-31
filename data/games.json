@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:50:29.807554+00:00",
+  "updated_at": "2026-10-31T01:11:55.568203+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -7,50 +7,6 @@
   "training_cutoff": "Before current week",
   "active_week": 9,
   "games": [
-    {
-      "id": "401871071",
-      "home": {
-        "id": "98",
-        "name": "Western Kentucky Hilltoppers",
-        "abbreviation": "WKU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/98.png",
-        "score": 21
-      },
-      "away": {
-        "id": "48",
-        "name": "Delaware Blue Hens",
-        "abbreviation": "DEL",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/48.png",
-        "score": 35
-      },
-      "kickoff": "2026-10-27T23:00Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401871072",
-      "home": {
-        "id": "2623",
-        "name": "Missouri State Bears",
-        "abbreviation": "MOST",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2623.png",
-        "score": 24
-      },
-      "away": {
-        "id": "2534",
-        "name": "Sam Houston Bearkats",
-        "abbreviation": "SHSU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2534.png",
-        "score": 3
-      },
-      "kickoff": "2026-10-28T00:00Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
     {
       "id": "401871058",
       "home": {
@@ -146,17 +102,17 @@
         "name": "Charlotte 49ers",
         "abbreviation": "CLT",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2429.png",
-        "score": 0
+        "score": 24
       },
       "away": {
         "id": "2655",
         "name": "Tulane Green Wave",
         "abbreviation": "TULN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2655.png",
-        "score": 0
+        "score": 14
       },
       "kickoff": "2026-10-30T23:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -176,17 +132,17 @@
         "name": "UCF Knights",
         "abbreviation": "UCF",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png",
-        "score": 0
+        "score": 3
       },
       "away": {
         "id": "239",
         "name": "Baylor Bears",
         "abbreviation": "BAY",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png",
-        "score": 0
+        "score": 20
       },
       "kickoff": "2026-10-30T23:30Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
