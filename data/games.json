@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T13:19:04.257253+00:00",
+  "updated_at": "2026-11-04T16:04:39.337901+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -1964,36 +1964,6 @@
       }
     },
     {
-      "id": "401866461",
-      "home": {
-        "id": "2050",
-        "name": "Ball State Cardinals",
-        "abbreviation": "BALL",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2050.png",
-        "score": 0
-      },
-      "away": {
-        "id": "2084",
-        "name": "Buffalo Bulls",
-        "abbreviation": "BUFF",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2084.png",
-        "score": 0
-      },
-      "kickoff": "2026-11-11T05:00Z",
-      "status": "Scheduled",
-      "completed": false,
-      "neutral": false,
-      "prediction": {
-        "home_margin": -1.9,
-        "home_spread": 1.9,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 8,
-        "games_away": 8,
-        "trained_through_week": 9,
-        "calibrated": false
-      }
-    },
-    {
       "id": "401866463",
       "home": {
         "id": "2649",
@@ -2016,6 +1986,36 @@
       "prediction": {
         "home_margin": 5.8,
         "home_spread": -5.8,
+        "model": "Experimental opponent-adjusted ridge ratings",
+        "games_home": 8,
+        "games_away": 8,
+        "trained_through_week": 9,
+        "calibrated": false
+      }
+    },
+    {
+      "id": "401866461",
+      "home": {
+        "id": "2050",
+        "name": "Ball State Cardinals",
+        "abbreviation": "BALL",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2050.png",
+        "score": 0
+      },
+      "away": {
+        "id": "2084",
+        "name": "Buffalo Bulls",
+        "abbreviation": "BUFF",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2084.png",
+        "score": 0
+      },
+      "kickoff": "2026-11-12T00:30Z",
+      "status": "Scheduled",
+      "completed": false,
+      "neutral": false,
+      "prediction": {
+        "home_margin": -1.9,
+        "home_spread": 1.9,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 8,
         "games_away": 8,
