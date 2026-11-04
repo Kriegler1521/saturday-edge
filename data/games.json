@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T01:19:07.510584+00:00",
+  "updated_at": "2026-11-04T04:06:07.891103+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -8,100 +8,26 @@
   "active_week": 10,
   "games": [
     {
-      "id": "401860908",
-      "home": {
-        "id": "68",
-        "name": "Boise State Broncos",
-        "abbreviation": "BOIS",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/68.png",
-        "score": 46
-      },
-      "away": {
-        "id": "326",
-        "name": "Texas State Bobcats",
-        "abbreviation": "TXST",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/326.png",
-        "score": 45
-      },
-      "kickoff": "2026-11-01T02:00Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401864530",
-      "home": {
-        "id": "2439",
-        "name": "UNLV Rebels",
-        "abbreviation": "UNLV",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2439.png",
-        "score": 31
-      },
-      "away": {
-        "id": "2459",
-        "name": "Northern Illinois Huskies",
-        "abbreviation": "NIU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2459.png",
-        "score": 24
-      },
-      "kickoff": "2026-11-01T02:30Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401860924",
-      "home": {
-        "id": "278",
-        "name": "Fresno State Bulldogs",
-        "abbreviation": "FRES",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/278.png",
-        "score": 38
-      },
-      "away": {
-        "id": "204",
-        "name": "Oregon State Beavers",
-        "abbreviation": "ORST",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/204.png",
-        "score": 22
-      },
-      "kickoff": "2026-11-01T03:00Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
       "id": "401866453",
       "home": {
         "id": "2006",
         "name": "Akron Zips",
         "abbreviation": "AKR",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2006.png",
-        "score": 6
+        "score": 20
       },
       "away": {
         "id": "195",
         "name": "Ohio Bobcats",
         "abbreviation": "OHIO",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/195.png",
-        "score": 7
+        "score": 28
       },
       "kickoff": "2026-11-04T00:00Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": -9.9,
-        "home_spread": 9.9,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 8,
-        "games_away": 8,
-        "trained_through_week": 9,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401866454",
@@ -110,14 +36,14 @@
         "name": "Miami (OH) RedHawks",
         "abbreviation": "M-OH",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/193.png",
-        "score": 0
+        "score": 31
       },
       "away": {
         "id": "2084",
         "name": "Buffalo Bulls",
         "abbreviation": "BUFF",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2084.png",
-        "score": 3
+        "score": 24
       },
       "kickoff": "2026-11-04T01:00Z",
       "status": "In Progress",
