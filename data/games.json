@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T01:21:16.420175+00:00",
+  "updated_at": "2026-11-05T04:06:19.765137+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -58,28 +58,20 @@
         "name": "Massachusetts Minutemen",
         "abbreviation": "MASS",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/113.png",
-        "score": 7
+        "score": 31
       },
       "away": {
         "id": "2050",
         "name": "Ball State Cardinals",
         "abbreviation": "BALL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2050.png",
-        "score": 7
+        "score": 30
       },
       "kickoff": "2026-11-05T00:00Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": 9.7,
-        "home_spread": -9.7,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 8,
-        "games_away": 8,
-        "trained_through_week": 9,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401866457",
@@ -88,28 +80,20 @@
         "name": "Sacramento State Hornets",
         "abbreviation": "SAC",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/16.png",
-        "score": 10
+        "score": 17
       },
       "away": {
         "id": "2649",
         "name": "Toledo Rockets",
         "abbreviation": "TOL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2649.png",
-        "score": 7
+        "score": 20
       },
       "kickoff": "2026-11-05T00:00Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": -12.6,
-        "home_spread": 12.6,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 9,
-        "games_away": 8,
-        "trained_through_week": 9,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401866456",
@@ -118,28 +102,20 @@
         "name": "Eastern Michigan Eagles",
         "abbreviation": "EMU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2199.png",
-        "score": 0
+        "score": 7
       },
       "away": {
         "id": "2117",
         "name": "Central Michigan Chippewas",
         "abbreviation": "CMU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2117.png",
-        "score": 7
+        "score": 35
       },
       "kickoff": "2026-11-05T00:30Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": true,
-      "prediction": {
-        "home_margin": -0.6,
-        "home_spread": 0.6,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 9,
-        "games_away": 8,
-        "trained_through_week": 9,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401862817",
