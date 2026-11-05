@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T21:58:03.064126+00:00",
+  "updated_at": "2026-11-05T01:21:16.420175+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -58,17 +58,17 @@
         "name": "Massachusetts Minutemen",
         "abbreviation": "MASS",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/113.png",
-        "score": 0
+        "score": 7
       },
       "away": {
         "id": "2050",
         "name": "Ball State Cardinals",
         "abbreviation": "BALL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2050.png",
-        "score": 0
+        "score": 7
       },
       "kickoff": "2026-11-05T00:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -88,17 +88,17 @@
         "name": "Sacramento State Hornets",
         "abbreviation": "SAC",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/16.png",
-        "score": 0
+        "score": 10
       },
       "away": {
         "id": "2649",
         "name": "Toledo Rockets",
         "abbreviation": "TOL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2649.png",
-        "score": 0
+        "score": 7
       },
       "kickoff": "2026-11-05T00:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -125,10 +125,10 @@
         "name": "Central Michigan Chippewas",
         "abbreviation": "CMU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2117.png",
-        "score": 0
+        "score": 7
       },
       "kickoff": "2026-11-05T00:30Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": true,
       "prediction": {
