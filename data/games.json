@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T15:49:43.855963+00:00",
+  "updated_at": "2026-11-07T18:56:56.838950+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -234,17 +234,17 @@
         "name": "Utah Utes",
         "abbreviation": "UTAH",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
-        "score": 0
+        "score": 14
       },
       "away": {
         "id": "252",
         "name": "BYU Cougars",
         "abbreviation": "BYU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
-        "score": 0
+        "score": 20
       },
       "kickoff": "2026-11-07T17:00Z",
-      "status": "Scheduled",
+      "status": "Halftime",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -264,17 +264,17 @@
         "name": "Missouri Tigers",
         "abbreviation": "MIZ",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png",
-        "score": 0
+        "score": 10
       },
       "away": {
         "id": "251",
         "name": "Texas Longhorns",
         "abbreviation": "TEX",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
-        "score": 0
+        "score": 10
       },
       "kickoff": "2026-11-07T17:00Z",
-      "status": "Scheduled",
+      "status": "Halftime",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -294,17 +294,17 @@
         "name": "Minnesota Golden Gophers",
         "abbreviation": "MINN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/135.png",
-        "score": 0
+        "score": 10
       },
       "away": {
         "id": "26",
         "name": "UCLA Bruins",
         "abbreviation": "UCLA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png",
-        "score": 0
+        "score": 10
       },
       "kickoff": "2026-11-07T17:00Z",
-      "status": "Scheduled",
+      "status": "Halftime",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -324,17 +324,17 @@
         "name": "Baylor Bears",
         "abbreviation": "BAY",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png",
-        "score": 0
+        "score": 21
       },
       "away": {
         "id": "66",
         "name": "Iowa State Cyclones",
         "abbreviation": "ISU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png",
-        "score": 0
+        "score": 17
       },
       "kickoff": "2026-11-07T17:00Z",
-      "status": "Scheduled",
+      "status": "Halftime",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -354,17 +354,17 @@
         "name": "Syracuse Orange",
         "abbreviation": "SYR",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/183.png",
-        "score": 0
+        "score": 6
       },
       "away": {
         "id": "228",
         "name": "Clemson Tigers",
         "abbreviation": "CLEM",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/228.png",
-        "score": 0
+        "score": 9
       },
       "kickoff": "2026-11-07T17:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -384,17 +384,17 @@
         "name": "Boston College Eagles",
         "abbreviation": "BC",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png",
-        "score": 0
+        "score": 17
       },
       "away": {
         "id": "52",
         "name": "Florida State Seminoles",
         "abbreviation": "FSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png",
-        "score": 0
+        "score": 21
       },
       "kickoff": "2026-11-07T17:00Z",
-      "status": "Scheduled",
+      "status": "Halftime",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -414,17 +414,17 @@
         "name": "UConn Huskies",
         "abbreviation": "CONN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/41.png",
-        "score": 0
+        "score": 14
       },
       "away": {
         "id": "153",
         "name": "North Carolina Tar Heels",
         "abbreviation": "UNC",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png",
-        "score": 0
+        "score": 28
       },
       "kickoff": "2026-11-07T17:00Z",
-      "status": "Scheduled",
+      "status": "Halftime",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -451,10 +451,10 @@
         "name": "Tulsa Golden Hurricane",
         "abbreviation": "TLSA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/202.png",
-        "score": 0
+        "score": 32
       },
       "kickoff": "2026-11-07T17:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -474,17 +474,17 @@
         "name": "NC State Wolfpack",
         "abbreviation": "NCSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/152.png",
-        "score": 0
+        "score": 3
       },
       "away": {
         "id": "150",
         "name": "Duke Blue Devils",
         "abbreviation": "DUKE",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png",
-        "score": 0
+        "score": 17
       },
       "kickoff": "2026-11-07T17:30Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -504,17 +504,17 @@
         "name": "Purdue Boilermakers",
         "abbreviation": "PUR",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png",
-        "score": 0
+        "score": 12
       },
       "away": {
         "id": "120",
         "name": "Maryland Terrapins",
         "abbreviation": "MD",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/120.png",
-        "score": 0
+        "score": 7
       },
       "kickoff": "2026-11-07T17:30Z",
-      "status": "Scheduled",
+      "status": "Halftime",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -541,10 +541,10 @@
         "name": "Arkansas Razorbacks",
         "abbreviation": "ARK",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png",
-        "score": 0
+        "score": 10
       },
       "kickoff": "2026-11-07T17:45Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -564,17 +564,17 @@
         "name": "Kansas State Wildcats",
         "abbreviation": "KSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2306.png",
-        "score": 0
+        "score": 7
       },
       "away": {
         "id": "197",
         "name": "Oklahoma State Cowboys",
         "abbreviation": "OKST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png",
-        "score": 0
+        "score": 28
       },
       "kickoff": "2026-11-07T18:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -594,17 +594,17 @@
         "name": "Coastal Carolina Chanticleers",
         "abbreviation": "CCU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/324.png",
-        "score": 0
+        "score": 3
       },
       "away": {
         "id": "295",
         "name": "Old Dominion Monarchs",
         "abbreviation": "ODU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/295.png",
-        "score": 0
+        "score": 14
       },
       "kickoff": "2026-11-07T18:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
