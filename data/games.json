@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:51:58.732415+00:00",
+  "updated_at": "2026-11-07T01:14:58.821146+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -7,50 +7,6 @@
   "training_cutoff": "Before current week",
   "active_week": 10,
   "games": [
-    {
-      "id": "401866453",
-      "home": {
-        "id": "2006",
-        "name": "Akron Zips",
-        "abbreviation": "AKR",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2006.png",
-        "score": 20
-      },
-      "away": {
-        "id": "195",
-        "name": "Ohio Bobcats",
-        "abbreviation": "OHIO",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/195.png",
-        "score": 28
-      },
-      "kickoff": "2026-11-04T00:00Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
-    {
-      "id": "401866454",
-      "home": {
-        "id": "193",
-        "name": "Miami (OH) RedHawks",
-        "abbreviation": "M-OH",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/193.png",
-        "score": 31
-      },
-      "away": {
-        "id": "2084",
-        "name": "Buffalo Bulls",
-        "abbreviation": "BUFF",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2084.png",
-        "score": 34
-      },
-      "kickoff": "2026-11-04T01:00Z",
-      "status": "Final",
-      "completed": true,
-      "neutral": false,
-      "prediction": null
-    },
     {
       "id": "401866455",
       "home": {
@@ -168,17 +124,17 @@
         "name": "SMU Mustangs",
         "abbreviation": "SMU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2567.png",
-        "score": 0
+        "score": 20
       },
       "away": {
         "id": "259",
         "name": "Virginia Tech Hokies",
         "abbreviation": "VT",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/259.png",
-        "score": 0
+        "score": 7
       },
       "kickoff": "2026-11-07T00:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -205,10 +161,10 @@
         "name": "South Florida Bulls",
         "abbreviation": "USF",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/58.png",
-        "score": 0
+        "score": 7
       },
       "kickoff": "2026-11-07T00:30Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -238,7 +194,7 @@
         "score": 0
       },
       "kickoff": "2026-11-07T01:00Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
