@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T01:19:53.648783+00:00",
+  "updated_at": "2026-11-08T04:03:46.212298+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -904,18 +904,10 @@
         "score": 26
       },
       "kickoff": "2026-11-07T22:00Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": 7.6,
-        "home_spread": -7.6,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 8,
-        "games_away": 8,
-        "trained_through_week": 9,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401860911",
@@ -924,28 +916,20 @@
         "name": "Colorado State Rams",
         "abbreviation": "CSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/36.png",
-        "score": 17
+        "score": 38
       },
       "away": {
         "id": "68",
         "name": "Boise State Broncos",
         "abbreviation": "BOIS",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/68.png",
-        "score": 43
+        "score": 64
       },
       "kickoff": "2026-11-07T23:00Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": -11.0,
-        "home_spread": 11.0,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 8,
-        "games_away": 8,
-        "trained_through_week": 9,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401856745",
@@ -954,7 +938,7 @@
         "name": "Tennessee Volunteers",
         "abbreviation": "TENN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
-        "score": 10
+        "score": 34
       },
       "away": {
         "id": "96",
@@ -964,18 +948,10 @@
         "score": 6
       },
       "kickoff": "2026-11-07T23:15Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": 5.4,
-        "home_spread": -5.4,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 8,
-        "games_away": 8,
-        "trained_through_week": 9,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401871075",
@@ -984,28 +960,20 @@
         "name": "Jacksonville State Gamecocks",
         "abbreviation": "JXST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/55.png",
-        "score": 10
+        "score": 47
       },
       "away": {
         "id": "2534",
         "name": "Sam Houston Bearkats",
         "abbreviation": "SHSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2534.png",
-        "score": 0
+        "score": 14
       },
       "kickoff": "2026-11-08T00:00Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": 13.4,
-        "home_spread": -13.4,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 8,
-        "games_away": 8,
-        "trained_through_week": 9,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401858291",
@@ -1014,14 +982,14 @@
         "name": "Notre Dame Fighting Irish",
         "abbreviation": "ND",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
-        "score": 10
+        "score": 31
       },
       "away": {
         "id": "2390",
         "name": "Miami Hurricanes",
         "abbreviation": "MIA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
-        "score": 0
+        "score": 24
       },
       "kickoff": "2026-11-08T00:30Z",
       "status": "In Progress",
@@ -1044,14 +1012,14 @@
         "name": "Ole Miss Rebels",
         "abbreviation": "MISS",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png",
-        "score": 0
+        "score": 7
       },
       "away": {
         "id": "61",
         "name": "Georgia Bulldogs",
         "abbreviation": "UGA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
-        "score": 14
+        "score": 42
       },
       "kickoff": "2026-11-08T00:30Z",
       "status": "In Progress",
@@ -1060,96 +1028,6 @@
       "prediction": {
         "home_margin": 0.2,
         "home_spread": -0.2,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 8,
-        "games_away": 8,
-        "trained_through_week": 9,
-        "calibrated": false
-      }
-    },
-    {
-      "id": "401858513",
-      "home": {
-        "id": "77",
-        "name": "Northwestern Wildcats",
-        "abbreviation": "NU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png",
-        "score": 0
-      },
-      "away": {
-        "id": "2294",
-        "name": "Iowa Hawkeyes",
-        "abbreviation": "IOWA",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
-        "score": 7
-      },
-      "kickoff": "2026-11-08T00:30Z",
-      "status": "In Progress",
-      "completed": false,
-      "neutral": false,
-      "prediction": {
-        "home_margin": 3.9,
-        "home_spread": -3.9,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 8,
-        "games_away": 8,
-        "trained_through_week": 9,
-        "calibrated": false
-      }
-    },
-    {
-      "id": "401856852",
-      "home": {
-        "id": "9",
-        "name": "Arizona State Sun Devils",
-        "abbreviation": "ASU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/9.png",
-        "score": 10
-      },
-      "away": {
-        "id": "38",
-        "name": "Colorado Buffaloes",
-        "abbreviation": "COLO",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/38.png",
-        "score": 0
-      },
-      "kickoff": "2026-11-08T00:30Z",
-      "status": "In Progress",
-      "completed": false,
-      "neutral": false,
-      "prediction": {
-        "home_margin": 4.4,
-        "home_spread": -4.4,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 8,
-        "games_away": 8,
-        "trained_through_week": 9,
-        "calibrated": false
-      }
-    },
-    {
-      "id": "401858287",
-      "home": {
-        "id": "59",
-        "name": "Georgia Tech Yellow Jackets",
-        "abbreviation": "GT",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/59.png",
-        "score": 3
-      },
-      "away": {
-        "id": "97",
-        "name": "Louisville Cardinals",
-        "abbreviation": "LOU",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
-        "score": 10
-      },
-      "kickoff": "2026-11-08T00:30Z",
-      "status": "In Progress",
-      "completed": false,
-      "neutral": false,
-      "prediction": {
-        "home_margin": -10.4,
-        "home_spread": 10.4,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 8,
         "games_away": 8,
@@ -1171,7 +1049,7 @@
         "name": "Michigan State Spartans",
         "abbreviation": "MSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
-        "score": 0
+        "score": 15
       },
       "kickoff": "2026-11-08T00:30Z",
       "status": "In Progress",
@@ -1188,34 +1066,92 @@
       }
     },
     {
+      "id": "401858513",
+      "home": {
+        "id": "77",
+        "name": "Northwestern Wildcats",
+        "abbreviation": "NU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png",
+        "score": 10
+      },
+      "away": {
+        "id": "2294",
+        "name": "Iowa Hawkeyes",
+        "abbreviation": "IOWA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
+        "score": 24
+      },
+      "kickoff": "2026-11-08T00:30Z",
+      "status": "Final",
+      "completed": true,
+      "neutral": false,
+      "prediction": null
+    },
+    {
+      "id": "401856852",
+      "home": {
+        "id": "9",
+        "name": "Arizona State Sun Devils",
+        "abbreviation": "ASU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/9.png",
+        "score": 20
+      },
+      "away": {
+        "id": "38",
+        "name": "Colorado Buffaloes",
+        "abbreviation": "COLO",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/38.png",
+        "score": 10
+      },
+      "kickoff": "2026-11-08T00:30Z",
+      "status": "Final",
+      "completed": true,
+      "neutral": false,
+      "prediction": null
+    },
+    {
+      "id": "401858287",
+      "home": {
+        "id": "59",
+        "name": "Georgia Tech Yellow Jackets",
+        "abbreviation": "GT",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/59.png",
+        "score": 17
+      },
+      "away": {
+        "id": "97",
+        "name": "Louisville Cardinals",
+        "abbreviation": "LOU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
+        "score": 44
+      },
+      "kickoff": "2026-11-08T00:30Z",
+      "status": "Final",
+      "completed": true,
+      "neutral": false,
+      "prediction": null
+    },
+    {
       "id": "401862823",
       "home": {
         "id": "349",
         "name": "Army Black Knights",
         "abbreviation": "ARMY",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/349.png",
-        "score": 0
+        "score": 21
       },
       "away": {
         "id": "2005",
         "name": "Air Force Falcons",
         "abbreviation": "AFA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2005.png",
-        "score": 3
+        "score": 24
       },
       "kickoff": "2026-11-08T00:30Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": 3.3,
-        "home_spread": -3.3,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 8,
-        "games_away": 8,
-        "trained_through_week": 9,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401856739",
@@ -1224,28 +1160,20 @@
         "name": "Florida Gators",
         "abbreviation": "FLA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png",
-        "score": 0
+        "score": 7
       },
       "away": {
         "id": "201",
         "name": "Oklahoma Sooners",
         "abbreviation": "OU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png",
-        "score": 3
+        "score": 23
       },
       "kickoff": "2026-11-08T00:45Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": 6.5,
-        "home_spread": -6.5,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 8,
-        "games_away": 8,
-        "trained_through_week": 9,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401870795",
@@ -1254,14 +1182,14 @@
         "name": "New Mexico State Aggies",
         "abbreviation": "NMSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/166.png",
-        "score": 7
+        "score": 14
       },
       "away": {
         "id": "2335",
         "name": "Liberty Flames",
         "abbreviation": "LIB",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2335.png",
-        "score": 0
+        "score": 23
       },
       "kickoff": "2026-11-08T01:00Z",
       "status": "In Progress",
@@ -1284,17 +1212,17 @@
         "name": "Texas Tech Red Raiders",
         "abbreviation": "TTU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
-        "score": 0
+        "score": 35
       },
       "away": {
         "id": "277",
         "name": "West Virginia Mountaineers",
         "abbreviation": "WVU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/277.png",
-        "score": 0
+        "score": 27
       },
       "kickoff": "2026-11-08T02:30Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -1314,7 +1242,7 @@
         "name": "Utah State Aggies",
         "abbreviation": "USU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/328.png",
-        "score": 0
+        "score": 14
       },
       "away": {
         "id": "278",
@@ -1324,7 +1252,7 @@
         "score": 0
       },
       "kickoff": "2026-11-08T02:30Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -1344,17 +1272,17 @@
         "name": "UTEP Miners",
         "abbreviation": "UTEP",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2638.png",
-        "score": 0
+        "score": 7
       },
       "away": {
         "id": "62",
         "name": "Hawai'i Rainbow Warriors",
         "abbreviation": "HAW",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/62.png",
-        "score": 0
+        "score": 10
       },
       "kickoff": "2026-11-08T02:30Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -1381,10 +1309,10 @@
         "name": "Texas State Bobcats",
         "abbreviation": "TXST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/326.png",
-        "score": 0
+        "score": 7
       },
       "kickoff": "2026-11-08T03:30Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -1404,17 +1332,17 @@
         "name": "UNLV Rebels",
         "abbreviation": "UNLV",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2439.png",
-        "score": 0
+        "score": 7
       },
       "away": {
         "id": "2751",
         "name": "Wyoming Cowboys",
         "abbreviation": "WYO",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2751.png",
-        "score": 0
+        "score": 7
       },
       "kickoff": "2026-11-08T03:30Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
