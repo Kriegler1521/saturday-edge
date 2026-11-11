@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T04:08:26.688010+00:00",
+  "updated_at": "2026-11-11T07:29:20.991629+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -58,7 +58,7 @@
         "name": "Miami (OH) RedHawks",
         "abbreviation": "M-OH",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/193.png",
-        "score": 17
+        "score": 34
       },
       "away": {
         "id": "195",
@@ -68,18 +68,10 @@
         "score": 17
       },
       "kickoff": "2026-11-11T01:00Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": -0.5,
-        "home_spread": 0.5,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 9,
-        "games_away": 9,
-        "trained_through_week": 10,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401866461",
