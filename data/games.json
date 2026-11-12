@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T22:15:32.995496+00:00",
+  "updated_at": "2026-11-12T01:27:04.069926+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -80,7 +80,7 @@
         "name": "Ball State Cardinals",
         "abbreviation": "BALL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2050.png",
-        "score": 0
+        "score": 7
       },
       "away": {
         "id": "2084",
@@ -90,7 +90,7 @@
         "score": 0
       },
       "kickoff": "2026-11-12T00:30Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -110,7 +110,7 @@
         "name": "Central Michigan Chippewas",
         "abbreviation": "CMU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2117.png",
-        "score": 0
+        "score": 7
       },
       "away": {
         "id": "16",
@@ -120,7 +120,7 @@
         "score": 0
       },
       "kickoff": "2026-11-12T00:30Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
@@ -140,7 +140,7 @@
         "name": "Toledo Rockets",
         "abbreviation": "TOL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2649.png",
-        "score": 0
+        "score": 10
       },
       "away": {
         "id": "113",
@@ -150,7 +150,7 @@
         "score": 0
       },
       "kickoff": "2026-11-12T00:30Z",
-      "status": "Scheduled",
+      "status": "In Progress",
       "completed": false,
       "neutral": false,
       "prediction": {
