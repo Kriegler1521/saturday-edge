@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T07:19:14.605130+00:00",
+  "updated_at": "2026-11-15T09:57:54.920602+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -1322,18 +1322,10 @@
         "score": 21
       },
       "kickoff": "2026-11-15T04:00Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": -11.1,
-        "home_spread": 11.1,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 9,
-        "games_away": 9,
-        "trained_through_week": 10,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401856887",
