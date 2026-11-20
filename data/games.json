@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T02:20:49.540648+00:00",
+  "updated_at": "2026-11-20T11:43:09.961686+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -124,28 +124,20 @@
         "name": "Temple Owls",
         "abbreviation": "TEM",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/218.png",
-        "score": 10
+        "score": 27
       },
       "away": {
         "id": "242",
         "name": "Rice Owls",
         "abbreviation": "RICE",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/242.png",
-        "score": 7
+        "score": 31
       },
       "kickoff": "2026-11-20T00:30Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": 3.9,
-        "home_spread": -3.9,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 10,
-        "games_away": 10,
-        "trained_through_week": 11,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401856869",
