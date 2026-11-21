@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T02:17:53.686684+00:00",
+  "updated_at": "2026-11-21T11:05:57.794428+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -90,18 +90,10 @@
         "score": 17
       },
       "kickoff": "2026-11-20T23:00Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": 0.1,
-        "home_spread": -0.1,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 10,
-        "games_away": 10,
-        "trained_through_week": 11,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401858303",
@@ -110,28 +102,20 @@
         "name": "Duke Blue Devils",
         "abbreviation": "DUKE",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png",
-        "score": 0
+        "score": 10
       },
       "away": {
         "id": "228",
         "name": "Clemson Tigers",
         "abbreviation": "CLEM",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/228.png",
-        "score": 3
+        "score": 20
       },
       "kickoff": "2026-11-21T00:30Z",
-      "status": "Halftime",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": 10.6,
-        "home_spread": -10.6,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 10,
-        "games_away": 10,
-        "trained_through_week": 11,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401866468",
@@ -140,7 +124,7 @@
         "name": "Toledo Rockets",
         "abbreviation": "TOL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2649.png",
-        "score": 16
+        "score": 19
       },
       "away": {
         "id": "189",
@@ -150,18 +134,10 @@
         "score": 0
       },
       "kickoff": "2026-11-21T00:30Z",
-      "status": "Halftime",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": 12.4,
-        "home_spread": -12.4,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 10,
-        "games_away": 10,
-        "trained_through_week": 11,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401858529",
@@ -170,28 +146,20 @@
         "name": "Michigan State Spartans",
         "abbreviation": "MSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
-        "score": 0
+        "score": 7
       },
       "away": {
         "id": "2483",
         "name": "Oregon Ducks",
         "abbreviation": "ORE",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
-        "score": 10
+        "score": 45
       },
       "kickoff": "2026-11-21T01:00Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": -6.8,
-        "home_spread": 6.8,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 10,
-        "games_away": 10,
-        "trained_through_week": 11,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401864545",
@@ -200,7 +168,7 @@
         "name": "Air Force Falcons",
         "abbreviation": "AFA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2005.png",
-        "score": 21
+        "score": 52
       },
       "away": {
         "id": "2638",
@@ -210,18 +178,10 @@
         "score": 3
       },
       "kickoff": "2026-11-21T01:00Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": 19.1,
-        "home_spread": -19.1,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 10,
-        "games_away": 10,
-        "trained_through_week": 11,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401864542",
@@ -230,28 +190,20 @@
         "name": "Wyoming Cowboys",
         "abbreviation": "WYO",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2751.png",
-        "score": 0
+        "score": 17
       },
       "away": {
         "id": "167",
         "name": "New Mexico Lobos",
         "abbreviation": "UNM",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/167.png",
-        "score": 0
+        "score": 24
       },
       "kickoff": "2026-11-21T02:00Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": -7.9,
-        "home_spread": 7.9,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 10,
-        "games_away": 10,
-        "trained_through_week": 11,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401856866",
