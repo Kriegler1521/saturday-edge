@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T01:45:17.012025+00:00",
+  "updated_at": "2026-11-23T12:48:42.950415+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -3587,6 +3587,28 @@
       "status": "Scheduled",
       "completed": false,
       "neutral": true,
+      "prediction": null
+    },
+    {
+      "id": "401874049",
+      "home": {
+        "id": "-1",
+        "name": "TBD",
+        "abbreviation": "TBD",
+        "logo": null,
+        "score": 0
+      },
+      "away": {
+        "id": "-2",
+        "name": "TBD",
+        "abbreviation": "TBD",
+        "logo": null,
+        "score": 0
+      },
+      "kickoff": "2026-12-05T02:00Z",
+      "status": "Scheduled",
+      "completed": false,
+      "neutral": false,
       "prediction": null
     }
   ],
