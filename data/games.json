@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T01:44:42.101648+00:00",
+  "updated_at": "2026-11-27T12:25:15.547141+00:00",
   "source": "ESPN public scoreboard (unofficial)",
   "status": "updated",
   "model_status": "experimental",
@@ -58,58 +58,20 @@
         "name": "Texas Tech Red Raiders",
         "abbreviation": "TTU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
-        "score": 0
+        "score": 48
       },
       "away": {
         "id": "2628",
         "name": "TCU Horned Frogs",
         "abbreviation": "TCU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2628.png",
-        "score": 9
+        "score": 27
       },
       "kickoff": "2026-11-27T01:00Z",
-      "status": "In Progress",
-      "completed": false,
+      "status": "Final",
+      "completed": true,
       "neutral": false,
-      "prediction": {
-        "home_margin": 9.6,
-        "home_spread": -9.6,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 11,
-        "games_away": 11,
-        "trained_through_week": 12,
-        "calibrated": false
-      }
-    },
-    {
-      "id": "401858536",
-      "home": {
-        "id": "2294",
-        "name": "Iowa Hawkeyes",
-        "abbreviation": "IOWA",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
-        "score": 0
-      },
-      "away": {
-        "id": "158",
-        "name": "Nebraska Cornhuskers",
-        "abbreviation": "NEB",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png",
-        "score": 0
-      },
-      "kickoff": "2026-11-27T17:00Z",
-      "status": "Scheduled",
-      "completed": false,
-      "neutral": false,
-      "prediction": {
-        "home_margin": 3.3,
-        "home_spread": -3.3,
-        "model": "Experimental opponent-adjusted ridge ratings",
-        "games_home": 11,
-        "games_away": 11,
-        "trained_through_week": 12,
-        "calibrated": false
-      }
+      "prediction": null
     },
     {
       "id": "401856762",
@@ -224,6 +186,36 @@
       "prediction": {
         "home_margin": -1.4,
         "home_spread": 1.4,
+        "model": "Experimental opponent-adjusted ridge ratings",
+        "games_home": 11,
+        "games_away": 11,
+        "trained_through_week": 12,
+        "calibrated": false
+      }
+    },
+    {
+      "id": "401858536",
+      "home": {
+        "id": "2294",
+        "name": "Iowa Hawkeyes",
+        "abbreviation": "IOWA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
+        "score": 0
+      },
+      "away": {
+        "id": "158",
+        "name": "Nebraska Cornhuskers",
+        "abbreviation": "NEB",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png",
+        "score": 0
+      },
+      "kickoff": "2026-11-27T17:08Z",
+      "status": "Scheduled",
+      "completed": false,
+      "neutral": false,
+      "prediction": {
+        "home_margin": 3.3,
+        "home_spread": -3.3,
         "model": "Experimental opponent-adjusted ridge ratings",
         "games_home": 11,
         "games_away": 11,
@@ -2116,24 +2108,32 @@
     {
       "id": "401869533",
       "home": {
-        "id": "-1",
-        "name": "Utah",
-        "abbreviation": "Utah",
-        "logo": null,
+        "id": "254",
+        "name": "Utah Utes",
+        "abbreviation": "UTAH",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
         "score": 0
       },
       "away": {
-        "id": "-2",
-        "name": "TBD",
-        "abbreviation": "TBD",
-        "logo": null,
+        "id": "2641",
+        "name": "Texas Tech Red Raiders",
+        "abbreviation": "TTU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
         "score": 0
       },
       "kickoff": "2026-12-05T01:00Z",
       "status": "Scheduled",
       "completed": false,
       "neutral": true,
-      "prediction": null
+      "prediction": {
+        "home_margin": 2.9,
+        "home_spread": -2.9,
+        "model": "Experimental opponent-adjusted ridge ratings",
+        "games_home": 11,
+        "games_away": 11,
+        "trained_through_week": 12,
+        "calibrated": false
+      }
     },
     {
       "id": "401869542",
